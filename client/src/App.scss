@@ -1,0 +1,14 @@
+@import './styles/constants.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $primary-font;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: $primary-color;
+}

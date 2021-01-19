@@ -1,0 +1,39 @@
+@import '../../styles/constants.scss';
+
+.Navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparentize( #112834, .5);
+    position: sticky;
+    z-index: 500;
+
+    &_terminal-animation {
+        margin: 1.3rem;
+        display: none;
+        background: linear-gradient(to right, $accent-color, $secondary-color);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: $primary-font;
+        font-weight: 900;
+        font-size: 1.3rem;
+
+        @media (min-width: $breakpoint-xxs) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &_cursor {
+            height: 1.5rem;
+            width: 0.5rem;
+            margin-left: 0.3rem;
+            -webkit-animation: 1s blink step-end infinite;
+            -moz-animation: 1s blink step-end infinite;
+            -ms-animation: 1s blink step-end infinite;
+            -o-animation: 1s blink step-end infinite;
+            animation: 1.5s blink step-end infinite;
+        }
+    }
+}
