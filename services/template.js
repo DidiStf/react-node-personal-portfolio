@@ -8,19 +8,19 @@ exports.generateTemplate = (contactData) => {
         min-width: 400px;`;
 
     const theadTr = 
-        `background-color: #F5497D;
+        `background-color: #f5497d;
         color: #ffffff;`;
     
     const thTd = 
         `padding: 12px 15px;
-        border: 2px solid #F5497D;`;
+        border: 2px solid #f5497d;`;
 
     const tbodyTr = 
         `text-align: center;
         background-color: #132c3a;
         color: #ffffff;`;
 
-    const activeRow = `border-bottom: 5px solid #F5497D;`
+    const activeRow = `border-bottom: 5px solid #f5497d;`
 
     const template = `<table style="${table}">
     <thead>
