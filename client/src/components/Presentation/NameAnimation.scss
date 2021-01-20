@@ -1,0 +1,111 @@
+@import "../../styles/constants";
+
+.NameAnimation {
+  margin-left: 0.7rem;
+  margin-bottom: -1.3rem;
+
+  @media (min-width: $breakpoint-md) {
+    margin-bottom: -1.6rem;
+  }
+
+  #name {
+    height: 54px;
+    width: 206.75px;
+    animation: fill-name 0.5s ease forwards 4.2s;
+
+    @media (min-width: $breakpoint-xs) {
+      width: 300px;
+    }
+
+    @media (min-width: $breakpoint-md) {
+      width: 369.2px;
+    }
+
+    @media (min-width: $breakpoint-lg) {
+      width: 477px;
+    }
+  }
+
+  #name path:nth-child(1) {
+    stroke-dasharray: $letter-D-lg;
+  }
+
+  #name path:nth-child(2) {
+    stroke-dasharray: $letter-i-lg;
+  }
+
+  #name path:nth-child(3) {
+    stroke-dasharray: $letter-l-lg;
+  }
+
+  #name path:nth-child(4) {
+    stroke-dasharray: $letter-y-lg;
+  }
+
+  #name path:nth-child(5) {
+    stroke-dasharray: $letter-a-lg;
+  }
+
+  #name path:nth-child(6) {
+    stroke-dasharray: $letter-n-lg;
+  }
+
+  #name path:nth-child(7) {
+    stroke-dasharray: $letter-a-lg;
+  }
+
+  #name path:nth-child(8) {
+    stroke-dasharray: $letter-S-lg;
+  }
+
+  #name path:nth-child(9) {
+    stroke-dasharray: $letter-t-lg;
+  }
+
+  #name path:nth-child(10) {
+    stroke-dasharray: $letter-e-lg;
+  }
+
+  #name path:nth-child(11) {
+    stroke-dasharray: $letter-f-lg;
+  }
+
+  #name path:nth-child(12) {
+    stroke-dasharray: $letter-a-lg;
+  }
+
+  #name path:nth-child(13) {
+    stroke-dasharray: $letter-n-lg;
+  }
+
+  #name path:nth-child(14) {
+    stroke-dasharray: $letter-o-lg;
+  }
+
+  #name path:nth-child(15) {
+    stroke-dasharray: $letter-v-lg;
+  }
+
+  #name path:nth-child(16) {
+    stroke-dasharray: $letter-a-lg;
+  }
+
+  #name path:nth-child(17) {
+    stroke-dasharray: $dot-lg;
+  }
+}
+
+@keyframes appear {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill-name {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: $secondary-color;
+  }
+}

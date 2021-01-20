@@ -1,18 +1,48 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 /* Colors */
-$primary-color:#132c3a;
+$primary-color: #132c3a;
 $secondary-color: #f5497d;
 $accent-color: #f3f3f3;
 
 /* Breakpoints */
-$breakpoint-xl: 1200px;
-$breakpoint-lg: 945px;
-$breakpoint-m: 768px;
+$breakpoint-xxl: 1300px;
+$breakpoint-xl: 1100px;
+$breakpoint-lg: 900px;
+$breakpoint-md: 770px;
 $breakpoint-s: 600px;
 $breakpoint-xs: 450px;
-$breakpoint-xxs: 350px;
+$breakpoint-xxs: 370px;
 
 /* Fonts */
-$primary-font: 'poppins', 'Roboto', sans-serif;
+$primary-font: "poppins", "Roboto", sans-serif;
+
+/* Uppercase letters total path length */
+$letter-D-lg: 186.452px;
+$letter-S-lg: 169.319px;
+
+/* Lowercase letters total path length */
+$letter-a-lg: 162.801px;
+$letter-b-lg: 181.22px;
+$letter-c-lg: 133.485px;
+$letter-d-lg: 181.321px;
+$letter-e-lg: 164.177px;
+$letter-f-lg: 111.721px;
+$letter-i-lg: 95.973px;
+$letter-k-lg: 169.102px;
+$letter-l-lg: 88px;
+$letter-n-lg: 147.804px;
+$letter-o-lg: 139.406px;
+$letter-p-lg: 188.88px;
+$letter-r-lg: 90.336px;
+$letter-s-lg: 144.775px;
+$letter-t-lg: 110.344px;
+$letter-u-lg: 147.778px;
+$letter-v-lg: 127.25px;
+$letter-w-lg: 220.793px;
+$letter-y-lg: 152.541px;
+
+/* Special characters path length */
+$dot-lg: 26.619px;
+$dash-lg: 54.2px;
