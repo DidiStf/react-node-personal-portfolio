@@ -1,0 +1,12 @@
+@import "../../styles/constants";
+
+.ContactCard {
+  @include center-content;
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  margin: 20px;
+  height: 600px;
+  background-color: $darker-color;
+  justify-content: space-between;
+}
