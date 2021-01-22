@@ -1,8 +1,7 @@
 @import "../../styles/constants";
 
 .ContactButton {
-  display: flex;
-  justify-content: center;
+  @include center-content;
 
   &_link {
     position: absolute;
@@ -11,7 +10,6 @@
     cursor: pointer;
     background: $secondary-color;
     color: $accent-color;
-    font-family: $primary-font;
     font-weight: 600;
     font-size: 1rem;
     text-transform: uppercase;

@@ -1,11 +1,9 @@
 @import "../../styles/constants";
 
 .NavbarMenu {
+  @include center-content;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
   width: 100%;
   background-color: #122a38;
@@ -51,7 +49,6 @@
       text-decoration: none;
       padding: 0.3rem;
       font-size: 1.3rem;
-      font-family: $primary-font;
       color: $accent-color;
       text-transform: uppercase;
       transition: 0.5s;

@@ -5,6 +5,7 @@
 $primary-color: #132c3a;
 $secondary-color: #f5497d;
 $accent-color: #f3f3f3;
+$darker-color: #112834;
 
 /* Breakpoints */
 $breakpoint-xxl: 1300px;
@@ -46,3 +47,10 @@ $letter-y-lg: 152.541px;
 /* Special characters path length */
 $dot-lg: 26.619px;
 $dash-lg: 54.2px;
+
+/* Mixins */
+@mixin center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
