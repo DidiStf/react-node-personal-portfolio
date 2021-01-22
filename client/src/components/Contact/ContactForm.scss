@@ -1,0 +1,104 @@
+@import "../../styles/constants";
+
+.ContactForm {
+  @include center-content;
+  width: 50%;
+
+  @media (max-width: $breakpoint-lg) {
+    width: 100%;
+    padding: 0 50px;
+  }
+
+  &_form {
+    position: relative;
+    width: 100%;
+    padding: 0 0 0 75px;
+
+    &_title {
+      color: $accent-color;
+      font-weight: 500;
+      font-size: 2rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 40px;
+    }
+
+    &_input-box {
+      position: relative;
+      margin-bottom: 40px;
+
+      & textarea {
+        height: 75px;
+      }
+    }
+
+    &_input {
+      position: relative;
+      background: transparent;
+      outline: none;
+      border: none;
+      width: 100%;
+      color: $accent-color;
+      padding-bottom: 10px;
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+      font-weight: 300;
+      border-bottom: 2px solid transparentize($accent-color, 0.5);
+      resize: none;
+
+      &:focus ~ .ContactForm_form_label {
+        transform: translateY(-24px);
+        color: $secondary-color;
+      }
+
+      &:valid ~ .ContactForm_form_label {
+        transform: translateY(-24px);
+        color: $secondary-color;
+      }
+
+      &:focus {
+        border-bottom-color: $accent-color;
+      }
+
+      &:valid {
+        border-bottom-color: $accent-color;
+      }
+    }
+
+    &_button {
+      padding: 8px 20px;
+      margin-top: -10px;
+      min-width: 100px !important;
+      cursor: pointer;
+      background: $secondary-color !important;
+      color: $accent-color;
+      font-size: 1.3rem;
+      font-weight: 400;
+      border: none !important;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+
+      &:focus {
+        background: $primary-color !important;
+        color: $secondary-color;
+      }
+    }
+
+    &_label {
+      position: absolute;
+      left: 0;
+      font-weight: 300;
+      font-display: inline-block;
+      pointer-events: none;
+      letter-spacing: 1px;
+      color: transparentize($accent-color, 0.5);
+      transition: all 0.2s;
+    }
+
+    @media (max-width: $breakpoint-lg) {
+      width: 100%;
+      max-width: 500px;
+      padding: 0;
+    }
+  }
+}

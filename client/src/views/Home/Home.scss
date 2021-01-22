@@ -1,8 +1,6 @@
 @import "../../styles/constants";
 
 .HomeView {
+  @include center-content;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
