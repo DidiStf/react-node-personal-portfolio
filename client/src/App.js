@@ -1,21 +1,17 @@
-import './App.scss';
-
-import Navbar from './components/Navbar/Navbar';
-import NavbarMenu from './components/Navbar/Menu';
-import NavbarMenuToggler from './components/Navbar/Toggler';
-
-import HomeView from './views/Home/Home';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 import NavbarMenuState from './context/navbarMenu/NavbarMenuState';
+import Routes from './Routes';
+
+import './App.scss';
 
 const App = () => {
   return (
     <div className="App">
       <NavbarMenuState>
-        <Navbar />
-        <NavbarMenu />
-        <NavbarMenuToggler />
-        <HomeView />
+        <Router>
+          <Routes />
+        </Router>   
       </NavbarMenuState>
     </div>
   );
