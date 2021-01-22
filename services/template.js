@@ -1,5 +1,5 @@
 exports.generateTemplate = (contactData) => {
-    const {name, email, message} = contactData;
+    const {name, email, subject, message} = contactData;
 
     const table = 
         `border-collapse: collapse;
@@ -33,6 +33,10 @@ exports.generateTemplate = (contactData) => {
         <tr style="${tbodyTr}">
             <td style="${thTd}">Email</td>
             <td style="${thTd}">${email}</td>
+        </tr>
+        <tr style="${tbodyTr}">
+            <td style="${thTd}">Subject</td>
+            <td style="${thTd}">${subject}</td>
         </tr>
         <tr style="${tbodyTr}">
             <td style="${thTd}${activeRow}">Message</td>
