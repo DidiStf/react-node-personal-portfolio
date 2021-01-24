@@ -6,7 +6,7 @@
   padding: 0;
   height: 100vh;
   width: 100%;
-  background-color: #122a38;
+  background-color: $darker-color;
   position: fixed;
   top: -100vh;
   border-bottom-right-radius: 100%;
@@ -23,25 +23,26 @@
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column;
 
-    @media (min-width: $breakpoint-xl) {
-      flex-direction: row;
+    @media (max-width: $breakpoint-xl) {
+      flex-direction: column;
     }
-  }
 
-  &_list:hover {
-    .NavbarMenu_list-item_link {
-      transform: scale(1.5);
-      opacity: 0.2;
-      filter: blur(5px);
+    &:hover {
+      .NavbarMenu_list-item_link {
+        opacity: 0.2;
+      }
     }
   }
 
   &_list-item {
     list-style: none;
-    margin: 0 20px;
+    margin: 0 30px;
     transition: 0.5s;
+
+    @media (max-width: $breakpoint-xl) {
+      margin: 7px 0;
+    }
 
     &_link {
       display: block;
@@ -52,6 +53,10 @@
       color: $accent-color;
       text-transform: uppercase;
       transition: 0.5s;
+
+      &::selection {
+        background: transparent;
+      }
 
       &:hover {
         transform: scale(2) !important;
