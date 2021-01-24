@@ -27,5 +27,13 @@
     @media (min-width: 550px) {
       flex-direction: row;
     }
+
+    &_text {
+      cursor: grab;
+
+      &::selection {
+        background: transparent;
+      }
+    }
   }
 }

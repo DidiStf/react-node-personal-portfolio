@@ -8,10 +8,10 @@ const Presentation = () => {
     return (
         <div className="Presentation">
             <div className="Presentation_info">
-                <span>Hello. I'm</span> <NameAnimation />
+                <span className="Presentation_info_text">Hello. I'm</span> <NameAnimation />
             </div>
             <div className="Presentation_info">
-                <span>I'm a</span><DeveloperAnimation />
+                <span className="Presentation_info_text">I'm a</span><DeveloperAnimation />
             </div>
             <ContactButton />
         </div>
