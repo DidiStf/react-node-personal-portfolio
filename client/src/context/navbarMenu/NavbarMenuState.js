@@ -1,8 +1,8 @@
-import { useReducer } from 'react';
+import { useReducer } from "react";
 
-import NavbarMenuContext from './navbarMenuContext';
-import navbarMenuReducer from './navbarMenuReducer';
-import { TOGGLE_MENU } from '../types';
+import NavbarMenuContext from "./navbarMenuContext";
+import navbarMenuReducer from "./navbarMenuReducer";
+import { TOGGLE_MENU } from "../types";
 
 const NavbarMenuState = ({ children }) => {
   const initialState = [];
@@ -21,7 +21,8 @@ const NavbarMenuState = ({ children }) => {
       value={{
         open: state.open,
         toggleMenuAction,
-      }}>
+      }}
+    >
       {children}
     </NavbarMenuContext.Provider>
   );

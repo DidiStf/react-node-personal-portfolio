@@ -1,9 +1,9 @@
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router } from "react-router-dom";
 
-import NavbarMenuState from './context/navbarMenu/NavbarMenuState';
-import Routes from './Routes';
+import NavbarMenuState from "./context/navbarMenu/NavbarMenuState";
+import Routes from "./Routes";
 
-import './App.scss';
+import "./App.scss";
 
 const App = () => {
   return (
@@ -11,10 +11,10 @@ const App = () => {
       <NavbarMenuState>
         <Router>
           <Routes />
-        </Router>   
+        </Router>
       </NavbarMenuState>
     </div>
   );
-}
+};
 
 export default App;

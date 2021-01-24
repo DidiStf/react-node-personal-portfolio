@@ -1,13 +1,13 @@
-import ContactCard from '../../components/Contact/ContactCard';
+import ContactCard from "../../components/Contact/ContactCard";
 
-import './Contact.scss';
+import "./Contact.scss";
 
 const ContactView = () => {
-    return (
-        <div className="ContactView">
-            <ContactCard />
-        </div>
-    );
+  return (
+    <div className="ContactView">
+      <ContactCard />
+    </div>
+  );
 };
 
 export default ContactView;

@@ -1,15 +1,19 @@
-import ContactForm from './ContactForm';
-import ContactImage from './ContactImage';
+import ContactForm from "./ContactForm";
+import ContactImage from "./ContactImage";
 
-import './ContactCard.scss';
+import ContactFormState from "../../context/contactForm/ContactFormState";
+
+import "./ContactCard.scss";
 
 const ContactCard = () => {
-    return (
-        <div className="ContactCard">
-            <ContactForm />
-            <ContactImage />
-        </div>
-    );
+  return (
+    <ContactFormState>
+      <div className="ContactCard">
+        <ContactForm />
+        <ContactImage />
+      </div>
+    </ContactFormState>
+  );
 };
 
 export default ContactCard;
