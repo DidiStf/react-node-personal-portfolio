@@ -161,7 +161,7 @@ const ContactForm = () => {
               "Send"
             )}
           </button>
-          {true && (
+          {success && (
             <span className="ContactForm_form_message">Email Sent!</span>
           )}
           {error && (
