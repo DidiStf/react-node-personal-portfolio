@@ -9,9 +9,14 @@
   -webkit-text-fill-color: transparent;
   font-weight: 900;
   font-size: 1.3rem;
+  cursor: grab;
 
   @media (max-width: $breakpoint-xxs) {
     display: none;
+  }
+
+  &::selection {
+    background: transparent;
   }
 
   &_cursor {

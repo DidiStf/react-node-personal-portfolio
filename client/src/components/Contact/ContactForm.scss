@@ -21,6 +21,15 @@
       text-transform: uppercase;
       letter-spacing: 2px;
       margin-bottom: 40px;
+      cursor: grab;
+
+      &::selection {
+        background: transparent;
+      }
+
+      @media (max-width: $breakpoint-xxs) {
+        font-size: 1.3rem;
+      }
     }
 
     &_input-box {
@@ -29,6 +38,16 @@
 
       & textarea {
         height: 75px;
+      }
+
+      &.submit {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width: $breakpoint-xs) {
+          flex-direction: column;
+        }
       }
     }
 
@@ -63,6 +82,10 @@
       &:valid {
         border-bottom-color: $accent-color;
       }
+
+      @media (max-width: $breakpoint-xxs) {
+        font-size: 1rem;
+      }
     }
 
     &_button {
@@ -82,6 +105,25 @@
         background: $primary-color !important;
         color: $secondary-color;
       }
+
+      &_icon {
+        color: $darker-color;
+      }
+
+      @media (max-width: $breakpoint-xs) {
+        margin: auto;
+      }
+    }
+
+    &_message {
+      color: $secondary-color;
+      font-size: 1.1rem;
+      font-weight: 700;
+
+      @media (max-width: $breakpoint-xs) {
+        margin: auto;
+        margin-top: 0.3rem;
+      }
     }
 
     &_label {
@@ -93,6 +135,19 @@
       letter-spacing: 1px;
       color: transparentize($accent-color, 0.5);
       transition: all 0.2s;
+
+      &::selection {
+        background: transparent;
+      }
+
+      & .error::after {
+        color: $secondary-color;
+        content: "[not valid]";
+      }
+
+      @media (max-width: $breakpoint-xxs) {
+        font-size: 0.83rem;
+      }
     }
 
     @media (max-width: $breakpoint-lg) {
