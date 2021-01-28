@@ -1,4 +1,4 @@
-import ContactCard from "../../components/Contact/ContactCard";
+import ContactCard from "../../components/Contact/Card";
 
 import "./Contact.scss";
 

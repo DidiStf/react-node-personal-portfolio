@@ -1,0 +1,43 @@
+@import "../../styles/constants";
+
+.ContentCard {
+  max-width: 1200px;
+  padding: 50px;
+
+  @media (max-width: $breakpoint-md) {
+    padding: 30px;
+  }
+
+  &_heading {
+    width: 100%;
+    text-align: center;
+    color: $accent-color;
+
+    & h2 {
+      font-weight: 500;
+      font-size: 2rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 40px;
+      cursor: grab;
+
+      &::selection {
+        background: transparent;
+      }
+
+      @media (max-width: $breakpoint-md) {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  &_content {
+    display: flex;
+    justify-content: space-between;
+    color: $accent-color;
+
+    @media (max-width: $breakpoint-xl) {
+      flex-direction: column-reverse;
+    }
+  }
+}

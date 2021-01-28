@@ -1,6 +1,8 @@
 @import "../../styles/constants";
 
-.HomeView {
+.AboutView {
   @include center-content;
   min-height: 100vh;
+  background: $primary-color;
+  padding-top: 74.59px;
 }

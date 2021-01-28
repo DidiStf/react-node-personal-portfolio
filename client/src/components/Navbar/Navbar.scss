@@ -3,7 +3,7 @@
 .Navbar {
   width: 100%;
   display: flex;
-  background-color: transparentize($darker-color, 0.5);
+  background-color: $darker-color;
   position: fixed;
   z-index: 500;
 }

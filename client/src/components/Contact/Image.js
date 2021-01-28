@@ -1,6 +1,6 @@
-import image from "../../assets/images/IMG CV.png";
+import image from "../../assets/images/img-contact.png";
 
-import "./ContactImage.scss";
+import "./Image.scss";
 
 const ContactImage = () => {
   return (

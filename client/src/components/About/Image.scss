@@ -1,0 +1,42 @@
+@import "../../styles/constants";
+
+.AboutImage {
+  @include center-content;
+  align-items: flex-start;
+  margin: 3rem 0;
+  min-width: 35%;
+
+  @media (max-width: $breakpoint-xl) {
+    margin-bottom: 5rem;
+  }
+
+  &::before {
+    position: relative;
+    content: "";
+    width: 350px;
+    height: 350px;
+    background-color: $secondary-color;
+    top: 25px;
+    left: 25px;
+    border-radius: 5px;
+
+    @media (max-width: $breakpoint-md) {
+      height: 250px;
+      width: 250px;
+      top: 15px;
+      left: 15px;
+    }
+  }
+
+  &_image {
+    height: 350px;
+    width: 350px;
+    position: absolute;
+    border-radius: 5px;
+
+    @media (max-width: $breakpoint-md) {
+      height: 250px;
+      width: 250px;
+    }
+  }
+}

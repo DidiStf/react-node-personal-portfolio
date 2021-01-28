@@ -142,11 +142,11 @@
 
       & .error::after {
         color: $secondary-color;
-        content: "[not valid]";
+        content: " required";
       }
 
       @media (max-width: $breakpoint-xxs) {
-        font-size: 0.83rem;
+        font-size: 0.8rem;
       }
     }
 
