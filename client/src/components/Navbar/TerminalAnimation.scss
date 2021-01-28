@@ -12,7 +12,7 @@
   cursor: grab;
 
   @media (max-width: $breakpoint-xxs) {
-    display: none;
+    font-size: 1rem;
   }
 
   &::selection {

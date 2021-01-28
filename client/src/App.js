@@ -1,5 +1,6 @@
 import { BrowserRouter as Router } from "react-router-dom";
 
+import Navbar from "./components/Navbar/Navbar";
 import NavbarMenuState from "./context/navbarMenu/NavbarMenuState";
 import Routes from "./Routes";
 
@@ -10,6 +11,7 @@ const App = () => {
     <div className="App">
       <NavbarMenuState>
         <Router>
+          <Navbar />
           <Routes />
         </Router>
       </NavbarMenuState>

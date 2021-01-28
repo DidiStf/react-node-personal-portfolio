@@ -31,13 +31,14 @@
     &:hover {
       .NavbarMenu_list-item_link {
         opacity: 0.2;
+        background-color: transparent;
       }
     }
   }
 
   &_list-item {
     list-style: none;
-    margin: 0 30px;
+    margin: 0 32px;
     transition: 0.5s;
 
     @media (max-width: $breakpoint-xl) {
@@ -59,9 +60,8 @@
       }
 
       &:hover {
-        transform: scale(2) !important;
+        transform: scale(2);
         opacity: 1 !important;
-        filter: blur(0) !important;
 
         &::before {
           transition: transform 0.5s;
@@ -82,6 +82,10 @@
         transform-origin: right;
         transform: scaleX(0);
         z-index: -1;
+      }
+
+      &.resume {
+        background-color: $secondary-color;
       }
     }
   }
