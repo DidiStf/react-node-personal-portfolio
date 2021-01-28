@@ -1,0 +1,20 @@
+import ContentCard from "../../components/Content/Card";
+import AboutImage from "../../components/About/Image";
+import AboutInfo from "../../components/About/Info";
+
+import "./About.scss";
+
+const AboutView = () => {
+  return (
+    <div className="AboutView">
+      <ContentCard heading="About me">
+        <>
+          <AboutInfo />
+          <AboutImage />
+        </>
+      </ContentCard>
+    </div>
+  );
+};
+
+export default AboutView;
