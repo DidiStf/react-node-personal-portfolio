@@ -6,7 +6,7 @@ import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 
 import ContactFormContext from "../../context/contactForm/contactFormContext";
 
-import "./ContactForm.scss";
+import "./Form.scss";
 
 const initialState = {
   name: "",
