@@ -1,8 +1,8 @@
-@import "../../styles/constants";
+@import '../../styles/constants';
 
 .Presentation {
   @media (min-width: 550px) {
-    padding-top: 15rem;
+    margin-top: 10rem;
   }
 
   &_info {

@@ -1,6 +1,11 @@
-@import "../../styles/constants";
+@import '../../styles/constants';
 
 .HomeView {
   @include center-content;
+  flex-direction: column;
   min-height: 100vh;
+
+  @media (max-width: 550px) {
+    flex-direction: column-reverse;
+  }
 }
