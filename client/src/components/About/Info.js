@@ -1,21 +1,21 @@
-import "./Info.scss";
+import './Info.scss';
 
 const AboutInfo = () => {
   return (
-    <div className="AboutInfo">
-      <h3 className="AboutInfo_heading">
+    <div className='AboutInfo'>
+      <h3 className='AboutInfo_heading'>
         Hi! I'm Dilyana and I'm a junior full-stack web developer based in Nice,
         France.
       </h3>
-      <p className="AboutInfo_info">
+      <p className='AboutInfo_info'>
         I'm passionate about programming and languages. I love creating
         aesthetic web and mobile applications and my goal is to write clean,
         well-structured code and to improve myself constantly.
         <br />
         <br />I speak French, Spanish, English and Bulgarian fluently. I have a
-        Master's degree with honours in{" "}
+        Master's degree with honours in{' '}
         <i>Hispanic and Latin American Studies</i> and a Bachelor's level
-        professional degree in{" "}
+        professional degree in{' '}
         <i>Full-Stack Web and Mobile Application Development and Design</i>
         .
         <br />

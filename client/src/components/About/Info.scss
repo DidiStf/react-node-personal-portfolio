@@ -32,6 +32,15 @@
     &::selection {
       background: transparent;
     }
+
+    & i,
+    br,
+    p,
+    strong {
+      &::selection {
+        background: transparent;
+      }
+    }
   }
 
   @media (max-width: $breakpoint-xl) {

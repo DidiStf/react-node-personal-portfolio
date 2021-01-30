@@ -1,10 +1,9 @@
-@import "../../styles/constants";
+@import '../../styles/constants';
 
 .AboutImage {
   @include center-content;
   align-items: flex-start;
   margin: 3rem 0;
-  min-width: 35%;
 
   @media (max-width: $breakpoint-xl) {
     margin-bottom: 5rem;
@@ -12,7 +11,7 @@
 
   &::before {
     position: relative;
-    content: "";
+    content: '';
     width: 350px;
     height: 350px;
     background-color: $secondary-color;
