@@ -1,0 +1,14 @@
+@import '../../styles/constants';
+
+.SkillsWordCloud {
+  @include center-content;
+  align-items: flex-start;
+
+  & text {
+    cursor: grab;
+
+    &::selection {
+      background: transparent;
+    }
+  }
+}
