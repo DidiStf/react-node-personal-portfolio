@@ -1,0 +1,43 @@
+@import '../../styles/constants';
+
+.SkillsInfo {
+  @include center-content;
+  cursor: grab;
+
+  @media (max-width: $breakpoint-xl) {
+    padding-right: 0;
+  }
+
+  &_column {
+    font-size: 1.15rem;
+
+    @media (max-width: $breakpoint-s) {
+      font-size: 1rem;
+      padding: 7px;
+    }
+
+    @media (max-width: $breakpoint-xs) {
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: $breakpoint-xxs) {
+      font-size: 0.7rem;
+    }
+
+    &::selection {
+      background: transparent;
+    }
+  }
+
+  &_row {
+    display: flex;
+    justify-content: flex-start;
+    margin: 15px;
+  }
+
+  &_icon {
+    color: $secondary-color;
+    margin: auto 0;
+    margin-right: 10px;
+  }
+}
