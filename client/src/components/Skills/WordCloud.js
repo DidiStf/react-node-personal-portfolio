@@ -28,10 +28,9 @@ const entries = [
   { label: 'REST' },
   { label: 'VueJs' },
   { label: 'jQuery' },
+  { label: 'Jest' },
   /*{ label: 'Heroku' },
   { label: 'Netlify' },
-  { label: 'GoogleCloud Platform' },
-  { label: "Jest" },
   { label: "WebSockets" },
   { label: "WebRTC" }
   { label: "AWS" },
