@@ -23,16 +23,18 @@
     @media (max-width: $breakpoint-xxs) {
       font-size: 0.7rem;
     }
-
-    &::selection {
-      background: transparent;
-    }
   }
 
   &_row {
     display: flex;
     justify-content: flex-start;
     margin: 15px;
+
+    & p {
+      &::selection {
+        background: transparent;
+      }
+    }
   }
 
   &_icon {
