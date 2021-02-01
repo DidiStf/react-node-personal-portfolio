@@ -4,7 +4,7 @@ const AboutInfo = () => {
   return (
     <div className='AboutInfo'>
       <h3 className='AboutInfo_heading'>
-        Hi! I'm Dilyana and I'm a junior full-stack web developer based in Nice,
+        Hi! I'm Dilyana and I'm a full-stack web developer based in Nice,
         France.
       </h3>
       <p className='AboutInfo_info'>

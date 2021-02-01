@@ -52,7 +52,7 @@ const NavbarMenu = () => {
         <li className='NavbarMenu_list-item'>
           <Link
             className='NavbarMenu_list-item_link test'
-            to='/'
+            to='/experience'
             onClick={toggleMenuAction}
           >
             Experience
