@@ -27,7 +27,7 @@
         &::after {
           right: auto;
           left: -7.5px;
-          box-shadow: -1px 1px 1px rgba(255, 255, 255, 0.2);
+          box-shadow: -1px 1px 1px transparentize($accent-color, 0.8);
         }
 
         &_tag {
@@ -47,7 +47,7 @@
     width: 400px;
     max-width: 95%;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 10px transparentize($accent-color, 0.7);
     background: $darker-color;
     display: flex;
     flex-direction: column;
@@ -64,7 +64,7 @@
 
     &::after {
       content: '';
-      box-shadow: 1px -1px 1px rgba(255, 255, 255, 0.2);
+      box-shadow: 1px -1px 1px transparentize($accent-color, 0.8);
       background: $darker-color;
       width: 15px;
       height: 15px;
@@ -85,9 +85,14 @@
       position: absolute;
       top: 7.5px;
       left: 7.5px;
+      cursor: grab;
 
       @media (min-width: $breakpoint-xs) {
         font-size: 0.75rem;
+      }
+
+      &::selection {
+        background-color: transparent;
       }
     }
 
@@ -112,9 +117,14 @@
     small {
       color: #ccc;
       margin-top: 22px;
+      cursor: grab;
 
       @media (min-width: $breakpoint-xl) {
         margin: 5px 0;
+      }
+
+      &::selection {
+        background-color: transparent;
       }
     }
 
@@ -126,9 +136,14 @@
       max-width: 380px;
       text-align: justify;
       text-justify: inter-word;
+      cursor: grab;
 
       @media (min-width: $breakpoint-xs) {
         font-size: 1rem;
+      }
+
+      &::selection {
+        background-color: transparent;
       }
     }
 
