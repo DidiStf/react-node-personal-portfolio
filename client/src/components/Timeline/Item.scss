@@ -5,41 +5,47 @@
   justify-content: flex-end;
   padding-right: 30px;
   margin: 10px 0;
-  width: 50%;
+  width: 100%;
+
+  @media (min-width: $breakpoint-s) {
+    width: 50%;
+  }
 
   &:nth-child(odd) {
-    align-self: flex-end;
-    justify-content: flex-start;
-    padding-right: 0;
-    padding-left: 30px;
+    @media (min-width: $breakpoint-s) {
+      align-self: flex-end;
+      justify-content: flex-start;
+      padding-right: 0;
+      padding-left: 30px;
 
-    .TimelineItem_content {
-      text-align: left;
-      align-items: flex-start;
-      margin-right: 0;
-      margin-left: 5px;
+      .TimelineItem_content {
+        text-align: left;
+        align-items: flex-start;
+        margin-right: 0;
+        margin-left: 5px;
 
-      &::after {
-        right: auto;
-        left: -7.5px;
-        box-shadow: -1px 1px 1px rgba(255, 255, 255, 0.2);
-      }
+        &::after {
+          right: auto;
+          left: -7.5px;
+          box-shadow: -1px 1px 1px rgba(255, 255, 255, 0.2);
+        }
 
-      &_tag {
-        left: auto;
-        right: 7.5px;
-      }
+        &_tag {
+          left: auto;
+          right: 7.5px;
+        }
 
-      &_circle {
-        right: auto;
-        left: -53px;
+        &_circle {
+          right: auto;
+          left: -53px;
+        }
       }
     }
   }
 
   &_content {
     width: 400px;
-    max-width: 80%;
+    max-width: 95%;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
     background: $darker-color;
@@ -51,6 +57,10 @@
     position: relative;
     margin-left: 0;
     margin-right: 5px;
+
+    @media (min-width: $breakpoint-md) {
+      max-width: 80%;
+    }
 
     &::after {
       content: '';
@@ -66,7 +76,7 @@
 
     &_tag {
       color: $accent-color;
-      font-size: 0.75rem;
+      font-size: 0.7rem;
       text-transform: uppercase;
       letter-spacing: 1px;
       font-weight: 600;
@@ -76,8 +86,8 @@
       top: 7.5px;
       left: 7.5px;
 
-      @media (max-width: $breakpoint-xs) {
-        font-size: 0.6rem;
+      @media (min-width: $breakpoint-xs) {
+        font-size: 0.75rem;
       }
     }
 
@@ -101,30 +111,24 @@
 
     small {
       color: #ccc;
-      margin: 5px 0;
+      margin-top: 22px;
 
-      @media (max-width: $breakpoint-xl) {
-        margin-top: 22px;
-      }
-
-      @media (max-width: $breakpoint-xs) {
-        font-size: 0.7rem;
+      @media (min-width: $breakpoint-xl) {
+        margin: 5px 0;
       }
     }
 
     p,
     strong {
-      font-size: 1rem;
+      font-size: 0.9rem;
       line-height: 1.5rem;
       margin: 5px 0;
       max-width: 380px;
+      text-align: justify;
+      text-justify: inter-word;
 
-      @media (max-width: $breakpoint-xs) {
-        font-size: 0.75rem;
-      }
-
-      @media (max-width: $breakpoint-xxs) {
-        font-size: 0.6rem;
+      @media (min-width: $breakpoint-xs) {
+        font-size: 1rem;
       }
     }
 
@@ -133,7 +137,7 @@
     }
   }
 
-  @media (max-width: $breakpoint-md) {
+  @media (max-width: $breakpoint-lg) {
     &_content {
       padding: 15px 10px;
       text-align: center;
