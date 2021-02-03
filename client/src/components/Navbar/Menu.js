@@ -9,6 +9,7 @@ import './Menu.scss';
 
 const NavbarMenu = () => {
   const { open, toggleMenuAction } = useContext(NavbarMenuContext);
+  const pathCv = '/cv/Dilyana_Stefanova_Cv_English.pdf';
 
   return (
     <div className={classnames('NavbarMenu', { open })}>
@@ -70,7 +71,8 @@ const NavbarMenu = () => {
         <li className='NavbarMenu_list-item'>
           <Link
             className='NavbarMenu_list-item_link resume'
-            to='/'
+            to={pathCv}
+            target='_blank'
             onClick={toggleMenuAction}
           >
             Resume
