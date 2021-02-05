@@ -74,6 +74,7 @@ const NavbarMenu = () => {
             to={pathCv}
             target='_blank'
             onClick={toggleMenuAction}
+            rel='noreferrer noopener'
           >
             Resume
           </Link>
