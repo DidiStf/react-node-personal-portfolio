@@ -4,6 +4,7 @@
   @include center-content;
   align-items: flex-start;
   margin: 3rem 0;
+  position: relative;
 
   @media (max-width: $breakpoint-xl) {
     margin-bottom: 5rem;
