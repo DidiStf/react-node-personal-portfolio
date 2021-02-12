@@ -47,7 +47,7 @@ const NavbarMenu = () => {
             to='/'
             onClick={toggleMenuAction}
           >
-            Portfolio
+            Projects
           </Link>
         </li>
         <li className='NavbarMenu_list-item'>
