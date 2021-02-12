@@ -4,6 +4,27 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  /* Scrollbar */
+  /* width */
+  ::-webkit-scrollbar {
+    width: 8px;
+
+    /* Track */
+    &-track {
+      background: $darker-color;
+    }
+
+    /* Handle */
+    &-thumb {
+      background: $secondary-color;
+
+      /* Handle on hover */
+      &:hover {
+        background: $secondary-color;
+      }
+    }
+  }
 }
 
 body {
@@ -11,4 +32,8 @@ body {
   font-size: 1rem;
   line-height: 1.6;
   background-color: $primary-color;
+}
+
+.App {
+  height: 100vh;
 }
