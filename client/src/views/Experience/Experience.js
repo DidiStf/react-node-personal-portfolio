@@ -6,7 +6,7 @@ import './Experience.scss';
 const ExperienceView = () => {
   return (
     <div className='ExperienceView'>
-      <ContentCard className='ExperienceView_ContentCard' heading='Experience'>
+      <ContentCard heading='Experience'>
         <Timeline />
       </ContentCard>
     </div>

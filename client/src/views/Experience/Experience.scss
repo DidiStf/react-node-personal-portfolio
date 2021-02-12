@@ -2,11 +2,8 @@
 
 .ExperienceView {
   @include center-content;
-  min-height: 100vh;
+  height: 100%;
   background: $primary-color;
   padding-top: 74.59px;
-
-  & .ContentCard {
-    width: 100%;
-  }
+  overflow: hidden;
 }

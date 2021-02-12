@@ -7,7 +7,7 @@ import './Skills.scss';
 const SkillsView = () => {
   return (
     <div className='SkillsView'>
-      <ContentCard className='SkillsView_ContentCard' heading='Skills'>
+      <ContentCard heading='Skills'>
         <SkillsInfo />
         <SkillsWordCloud />
       </ContentCard>
