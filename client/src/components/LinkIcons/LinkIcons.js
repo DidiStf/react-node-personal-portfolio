@@ -1,12 +1,16 @@
 import { useEffect, useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithubSquare } from '@fortawesome/free-brands-svg-icons';
+
+import LinkIcon from './LinkIcon';
 
 import './LinkIcons.scss';
 
 const LinkIcons = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const iconSize = windowWidth < 450 ? '2x' : '3x';
+  const linkedInLink =
+    'https://www.linkedin.com/in/dilyana-stefanova-0b0782193/';
+  const githubLink = 'https://github.com/DidiStf';
 
   useEffect(() => {
     const handleWindowResize = () => {
@@ -21,30 +25,8 @@ const LinkIcons = () => {
 
   return (
     <div className='LinkIcons'>
-      <a
-        className='LinkIcons_link'
-        href='https://www.linkedin.com/in/dilyana-stefanova-0b0782193/'
-        rel='noreferrer'
-        target='_blank'
-      >
-        <FontAwesomeIcon
-          icon={faLinkedin}
-          className='LinkIcons_icon'
-          size={iconSize}
-        />
-      </a>
-      <a
-        className='LinkIcons_link'
-        href='https://github.com/DidiStf'
-        rel='noreferrer'
-        target='_blank'
-      >
-        <FontAwesomeIcon
-          icon={faGithubSquare}
-          className='LinkIcons_icon'
-          size={iconSize}
-        />
-      </a>
+      <LinkIcon icon={faLinkedin} iconSize={iconSize} link={linkedInLink} />
+      <LinkIcon icon={faGithubSquare} iconSize={iconSize} link={githubLink} />
     </div>
   );
 };
