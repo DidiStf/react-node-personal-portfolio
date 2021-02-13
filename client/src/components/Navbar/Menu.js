@@ -44,7 +44,7 @@ const NavbarMenu = () => {
         <li className='NavbarMenu_list-item'>
           <Link
             className='NavbarMenu_list-item_link'
-            to='/'
+            to='/projects'
             onClick={toggleMenuAction}
           >
             Projects
