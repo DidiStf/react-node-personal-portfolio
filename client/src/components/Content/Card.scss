@@ -10,6 +10,10 @@
     padding: 30px;
   }
 
+  @media (max-width: $breakpoint-xs) {
+    padding: 15px;
+  }
+
   &_heading {
     width: 100%;
     text-align: center;
