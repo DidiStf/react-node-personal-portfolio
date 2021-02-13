@@ -1,0 +1,9 @@
+@import '../../styles/constants';
+
+.ProjectsView {
+  @include center-content;
+  height: 100%;
+  background: $primary-color;
+  padding-top: 74.59px;
+  overflow: hidden;
+}
