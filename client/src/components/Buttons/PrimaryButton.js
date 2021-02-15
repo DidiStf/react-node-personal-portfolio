@@ -5,10 +5,7 @@ import './PrimaryButton.scss';
 
 const PrimaryButton = ({ children, className, onClick }) => {
   return (
-    <div
-      className={classnames('PrimaryButton', { ...className })}
-      onClick={onClick}
-    >
+    <div className={classnames('PrimaryButton', className)} onClick={onClick}>
       {children}
     </div>
   );

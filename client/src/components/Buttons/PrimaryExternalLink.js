@@ -9,7 +9,7 @@ const PrimaryExternalLink = ({ children, className, link, onClick }) => {
   return (
     <PrimaryButton onClick={onClick}>
       <a
-        className={classnames('PrimaryExternalLink', { ...className })}
+        className={classnames('PrimaryExternalLink', className)}
         href={link}
         rel='noreferrer noopener'
         target='_blank'
