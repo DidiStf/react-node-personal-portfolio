@@ -14,7 +14,13 @@ export const shopApp = {
   description:
     'React-Native Shopping App that allows you to create a profile, check the available products, order, check your order details and manage the products you sell.',
   images: [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10],
-  technologies: ['React-Native', 'Redux', 'Firebase', 'JavaScript'],
+  technologies: [
+    'React-Native',
+    'Redux',
+    'Firebase',
+    'JavaScript',
+    'Push Notifications',
+  ],
   github: 'https://github.com/DidiStf/react-native-shop-app',
   isMobileApp: true,
 };
