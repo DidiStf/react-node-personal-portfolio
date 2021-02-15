@@ -1,11 +1,16 @@
 import classnames from 'classnames';
+import { useContext } from 'react';
 
 import PrimaryButton from '../Buttons/PrimaryButton';
 import PrimaryExternalLink from '../Buttons/PrimaryExternalLink';
 
+import ProjectModalContext from '../../context/projectModal/projectModalContext';
+
 import './Card.scss';
 
-const ProjectsCard = ({ project }) => {
+const ProjectCard = ({ project }) => {
+  const { toggleModalAction } = useContext(ProjectModalContext);
+
   const {
     name,
     description,
@@ -17,22 +22,26 @@ const ProjectsCard = ({ project }) => {
   } = project;
 
   return (
-    <div className='ProjectsCard'>
-      <div className='ProjectsCard_image-container'>
+    <div className='ProjectCard'>
+      <div
+        className='ProjectCard_image-container'
+        onClick={() => toggleModalAction(project)}
+      >
         <img
-          className={classnames('ProjectsCard_image', isMobileApp && 'mobile')}
+          className={classnames('ProjectCard_image', isMobileApp && 'mobile')}
           src={images[0]}
           alt='screenshot'
         />
       </div>
-      <div className='ProjectsCard_bottom'>
-        <div className='ProjectsCard_details'>
+      <div className='ProjectCard_bottom'>
+        <div className='ProjectCard_details'>
           <h3>{name}</h3>
-          <div className='ProjectsCard_technologies'>
+          <div className='ProjectCard_technologies'>
             <strong>Technologies: </strong>
             {technologies.map((tech, i) => (
-              <span key={i} className='ProjectsCard_technologies-tech'>
-                {tech}{' '}
+              <span key={i} className='ProjectCard_technologies-tech'>
+                {tech}
+                {i !== technologies.length - 1 ? ', ' : '.'}
               </span>
             ))}
           </div>
@@ -43,9 +52,9 @@ const ProjectsCard = ({ project }) => {
             {description}
           </p>
         </div>
-        <div className='ProjectsCard_actions'>
+        <div className='ProjectCard_actions'>
           {isMobileApp ? (
-            <PrimaryButton onClick={() => console.log('open modal')}>
+            <PrimaryButton onClick={() => toggleModalAction(project)}>
               See More
             </PrimaryButton>
           ) : (
@@ -55,7 +64,7 @@ const ProjectsCard = ({ project }) => {
           )}
           <PrimaryButton>
             <PrimaryExternalLink link={github}>
-              Check on Github
+              Check Github
             </PrimaryExternalLink>
           </PrimaryButton>
         </div>
@@ -64,4 +73,4 @@ const ProjectsCard = ({ project }) => {
   );
 };
 
-export default ProjectsCard;
+export default ProjectCard;
