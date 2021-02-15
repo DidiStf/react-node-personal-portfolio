@@ -3,12 +3,21 @@
 .SkillsWordCloud {
   @include center-content;
   align-items: flex-start;
+  margin-right: 200px;
+
+  @media (max-width: 1700px) {
+    margin-right: 150px;
+  }
+
+  @media (max-width: 1550px) {
+    margin-right: 100px;
+  }
+
+  @media (max-width: 1450px) {
+    margin-right: 50px;
+  }
 
   & text {
-    cursor: grab;
-
-    &::selection {
-      background: transparent;
-    }
+    user-select: none;
   }
 }

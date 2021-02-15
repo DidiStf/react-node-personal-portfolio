@@ -45,8 +45,8 @@ const SkillsWordCloud = () => {
 
   const settings = {
     entries: entries,
-    width: windowWidth < 1100 ? (windowWidth < 550 ? 260 : 480) : 650,
-    height: windowWidth < 1100 ? (windowWidth < 550 ? 260 : 480) : 650,
+    width: windowWidth < 1100 ? (windowWidth < 550 ? 260 : 480) : 620,
+    height: windowWidth < 1100 ? (windowWidth < 550 ? 260 : 480) : 620,
     radius: '55%',
     minRadius: 0,
     bgDraw: true,
