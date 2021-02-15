@@ -1,4 +1,4 @@
-@import "../../styles/constants";
+@import '../../styles/constants';
 
 .NavbarMenu {
   @include center-content;
@@ -29,64 +29,14 @@
     }
 
     &:hover {
-      .NavbarMenu_list-item_link {
+      .NavbarItem_link {
         opacity: 0.2;
         background-color: transparent;
       }
     }
   }
+}
 
-  &_list-item {
-    list-style: none;
-    margin: 0 32px;
-    transition: 0.5s;
-
-    @media (max-width: $breakpoint-xl) {
-      margin: 7px 0;
-    }
-
-    &_link {
-      display: block;
-      position: relative;
-      text-decoration: none;
-      padding: 0.3rem;
-      font-size: 1.3rem;
-      color: $accent-color;
-      text-transform: uppercase;
-      transition: 0.5s;
-
-      &::selection {
-        background: transparent;
-      }
-
-      &:hover {
-        transform: scale(2);
-        opacity: 1 !important;
-
-        &::before {
-          transition: transform 0.5s;
-          transform-origin: left;
-          transform: scaleX(1);
-        }
-      }
-
-      &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: $secondary-color;
-        transition: transform 0.5s;
-        transform-origin: right;
-        transform: scaleX(0);
-        z-index: -1;
-      }
-
-      &.resume {
-        background-color: $secondary-color;
-      }
-    }
-  }
+.resume {
+  background-color: $secondary-color;
 }
