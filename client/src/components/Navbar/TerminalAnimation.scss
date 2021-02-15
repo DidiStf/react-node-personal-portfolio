@@ -1,4 +1,4 @@
-@import "../../styles/constants";
+@import '../../styles/constants';
 
 .TerminalAnimation {
   @include center-content;
@@ -9,14 +9,10 @@
   -webkit-text-fill-color: transparent;
   font-weight: 900;
   font-size: 1.3rem;
-  cursor: grab;
+  user-select: none;
 
   @media (max-width: $breakpoint-xxs) {
     font-size: 1rem;
-  }
-
-  &::selection {
-    background: transparent;
   }
 
   &_cursor {

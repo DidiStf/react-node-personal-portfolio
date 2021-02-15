@@ -1,9 +1,9 @@
 @import '../../styles/constants';
 
-.ProjectsCard {
+.ProjectCard {
   background-color: $darker-color;
   border-radius: 10px;
-  box-shadow: 0 0 10px transparentize($accent-color, 0.7);
+  box-shadow: 0 0 15px transparentize($accent-color, 0.7);
   min-width: 350px;
   margin: 20px;
 
@@ -14,8 +14,9 @@
 
   &_image-container {
     aspect-ratio: 16 / 9;
-    background-color: transparentize($secondary-color, 0.4);
+    background-color: transparentize(black, 0.7);
     border-radius: 10px 10px 0 0;
+    cursor: pointer;
   }
 
   &_image {
@@ -34,7 +35,6 @@
   &_details {
     padding: 20px;
     text-align: justify;
-    cursor: grab;
     margin: auto;
 
     h3 {
@@ -43,13 +43,10 @@
       font-size: 1.1rem;
       margin: 10px 0 15px 0;
       text-align: center;
+      user-select: none;
 
       @media (max-width: $breakpoint-xs) {
         font-size: 1rem;
-      }
-
-      &::selection {
-        background-color: transparent;
       }
     }
     p {
@@ -58,6 +55,7 @@
       height: 120px;
       overflow-y: auto;
       padding-right: 5px;
+      user-select: none;
 
       @media (max-width: $breakpoint-xs) {
         font-size: 0.9rem;
@@ -66,16 +64,13 @@
       @media (max-width: $breakpoint-lg) {
         height: auto;
       }
-
-      &::selection {
-        background-color: transparent;
-      }
     }
   }
 
   &_technologies {
     height: 50px;
     font-size: 0.95rem;
+    user-select: none;
 
     @media (max-width: $breakpoint-xs) {
       font-size: 0.85rem;
@@ -85,16 +80,9 @@
       height: auto;
     }
 
-    &::selection {
-      background-color: transparent;
-    }
-
     &-tech {
       color: transparentize($accent-color, 0.3);
-
-      &::selection {
-        background-color: transparent;
-      }
+      user-select: none;
     }
   }
 

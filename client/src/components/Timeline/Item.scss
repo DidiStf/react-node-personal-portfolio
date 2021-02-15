@@ -85,14 +85,10 @@
       position: absolute;
       top: 7.5px;
       left: 7.5px;
-      cursor: grab;
+      user-select: none;
 
       @media (min-width: $breakpoint-xs) {
         font-size: 0.75rem;
-      }
-
-      &::selection {
-        background-color: transparent;
       }
     }
 
@@ -117,14 +113,10 @@
     small {
       color: #ccc;
       margin-top: 22px;
-      cursor: grab;
+      user-select: none;
 
       @media (min-width: $breakpoint-xl) {
         margin: 5px 0;
-      }
-
-      &::selection {
-        background-color: transparent;
       }
     }
 
@@ -136,14 +128,10 @@
       max-width: 380px;
       text-align: justify;
       text-justify: inter-word;
-      cursor: grab;
+      user-select: none;
 
       @media (min-width: $breakpoint-xs) {
         font-size: 1rem;
-      }
-
-      &::selection {
-        background-color: transparent;
       }
     }
 

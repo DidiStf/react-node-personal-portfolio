@@ -1,4 +1,4 @@
-@import "../../styles/constants";
+@import '../../styles/constants';
 
 .AboutInfo {
   @include center-content;
@@ -6,40 +6,30 @@
   padding-right: 50px;
   text-align: justify;
   text-justify: inter-word;
-  cursor: grab;
 
   &_heading {
     font-size: 1.3rem;
     margin-bottom: 10px;
-    cursor: grab;
+    user-select: none;
 
     @media (max-width: $breakpoint-s) {
       font-size: 1.1rem;
-    }
-
-    &::selection {
-      background: transparent;
     }
   }
 
   &_info {
     font-size: 1.15rem;
+    user-select: none;
 
     @media (max-width: $breakpoint-s) {
       font-size: 1rem;
-    }
-
-    &::selection {
-      background: transparent;
     }
 
     & i,
     br,
     p,
     strong {
-      &::selection {
-        background: transparent;
-      }
+      user-select: none;
     }
   }
 

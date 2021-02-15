@@ -25,11 +25,7 @@
       text-transform: uppercase;
       letter-spacing: 2px;
       margin-bottom: 40px;
-      cursor: grab;
-
-      &::selection {
-        background: transparent;
-      }
+      user-select: none;
 
       @media (max-width: $breakpoint-md) {
         font-size: 1.5rem;
