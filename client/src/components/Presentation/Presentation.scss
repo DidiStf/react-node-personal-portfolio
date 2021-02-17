@@ -29,11 +29,7 @@
     }
 
     &_text {
-      cursor: grab;
-
-      &::selection {
-        background: transparent;
-      }
+      user-select: none;
     }
   }
 }

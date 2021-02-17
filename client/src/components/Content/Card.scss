@@ -10,6 +10,10 @@
     padding: 30px;
   }
 
+  @media (max-width: $breakpoint-xs) {
+    padding: 15px;
+  }
+
   &_heading {
     width: 100%;
     text-align: center;
@@ -21,11 +25,7 @@
       text-transform: uppercase;
       letter-spacing: 2px;
       margin-bottom: 40px;
-      cursor: grab;
-
-      &::selection {
-        background: transparent;
-      }
+      user-select: none;
 
       @media (max-width: $breakpoint-md) {
         font-size: 1.5rem;

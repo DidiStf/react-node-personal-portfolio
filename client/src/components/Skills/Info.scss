@@ -2,7 +2,7 @@
 
 .SkillsInfo {
   @include center-content;
-  cursor: grab;
+  width: 100%;
 
   @media (max-width: $breakpoint-xl) {
     padding-right: 0;
@@ -31,9 +31,7 @@
     margin: 15px;
 
     & p {
-      &::selection {
-        background: transparent;
-      }
+      user-select: none;
     }
   }
 

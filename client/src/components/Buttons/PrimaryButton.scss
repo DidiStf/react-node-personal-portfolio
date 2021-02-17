@@ -1,0 +1,18 @@
+@import '../../styles/constants';
+
+.PrimaryButton {
+  @include center-content;
+  padding: 0.5rem;
+  cursor: pointer;
+  background: $secondary-color;
+  color: $accent-color;
+  font-weight: 400;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  border: none;
+  user-select: none;
+
+  @media (min-width: $breakpoint-xs) {
+    font-size: 1rem;
+  }
+}

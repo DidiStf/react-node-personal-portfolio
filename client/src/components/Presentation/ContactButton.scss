@@ -1,4 +1,4 @@
-@import "../../styles/constants";
+@import '../../styles/constants';
 
 .ContactButton {
   @include center-content;
@@ -16,10 +16,7 @@
     text-decoration: none;
     opacity: 0;
     animation: fade 0.5s ease forwards 4s;
-
-    &::selection {
-      background: transparent;
-    }
+    user-select: none;
 
     @media (min-width: $breakpoint-xs) {
       font-size: 1.3rem;

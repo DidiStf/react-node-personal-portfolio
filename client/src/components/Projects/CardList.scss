@@ -1,0 +1,14 @@
+@import '../../styles/constants';
+
+.ProjectsCardList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  @media (max-width: $breakpoint-xxl) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: $breakpoint-lg) {
+    grid-template-columns: 1fr;
+  }
+}

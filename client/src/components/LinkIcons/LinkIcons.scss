@@ -6,9 +6,4 @@
   @media (max-width: $breakpoint-xxs) {
     margin-top: 1.5rem;
   }
-
-  &_link {
-    margin: 3px;
-    color: transparentize($accent-color, 0.5);
-  }
 }

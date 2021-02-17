@@ -1,4 +1,4 @@
-@import "../../styles/constants";
+@import '../../styles/constants';
 
 .ContactForm {
   @include center-content;
@@ -21,11 +21,7 @@
       text-transform: uppercase;
       letter-spacing: 2px;
       margin-bottom: 40px;
-      cursor: grab;
-
-      &::selection {
-        background: transparent;
-      }
+      user-select: none;
 
       @media (max-width: $breakpoint-xxs) {
         font-size: 1.3rem;
@@ -135,14 +131,11 @@
       letter-spacing: 1px;
       color: transparentize($accent-color, 0.5);
       transition: all 0.2s;
-
-      &::selection {
-        background: transparent;
-      }
+      user-select: none;
 
       & .error::after {
         color: $secondary-color;
-        content: " required";
+        content: ' required';
       }
 
       @media (max-width: $breakpoint-xxs) {

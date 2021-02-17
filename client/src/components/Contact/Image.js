@@ -1,11 +1,11 @@
-import image from "../../assets/images/img-contact.png";
+import image from '../../assets/images/img-contact.png';
 
-import "./Image.scss";
+import './Image.scss';
 
 const ContactImage = () => {
   return (
-    <div className="ContactImage">
-      <img src={image} className="ContactImage_image" alt="Dilyana Stefanova" />
+    <div className='ContactImage'>
+      <img src={image} className='ContactImage_image' alt='Dilyana Stefanova' />
     </div>
   );
 };
