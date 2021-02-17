@@ -4,7 +4,7 @@ import { useContext } from 'react';
 import PrimaryButton from '../Buttons/PrimaryButton';
 import PrimaryExternalLink from '../Buttons/PrimaryExternalLink';
 
-import ProjectModalContext from '../../context/projectModal/projectModalContext';
+import { ProjectModalContext } from '../../context/ProjectModalProvider';
 
 import './Card.scss';
 

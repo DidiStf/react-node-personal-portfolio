@@ -1,18 +1,18 @@
-import ContactForm from "./Form";
-import ContactImage from "./Image";
+import ContactForm from './Form';
+import ContactImage from './Image';
 
-import ContactFormState from "../../context/contactForm/ContactFormState";
+import { ContactFormProvider } from '../../context/ContactFormProvider';
 
-import "./Card.scss";
+import './Card.scss';
 
 const ContactCard = () => {
   return (
-    <ContactFormState>
-      <div className="ContactCard">
+    <ContactFormProvider>
+      <div className='ContactCard'>
         <ContactForm />
         <ContactImage />
       </div>
-    </ContactFormState>
+    </ContactFormProvider>
   );
 };
 

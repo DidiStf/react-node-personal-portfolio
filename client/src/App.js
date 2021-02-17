@@ -1,8 +1,8 @@
 import { BrowserRouter as Router } from 'react-router-dom';
 
 import Navbar from './components/Navbar/Navbar';
-import NavbarMenuState from './context/navbarMenu/NavbarMenuState';
-import ProjectModalState from './context/projectModal/ProjectModalState';
+import { NavbarMenuProvider } from './context/NavbarMenuProvider';
+import { ProjectModalProvider } from './context/ProjectModalProvider';
 import Routes from './Routes';
 
 import './App.scss';
@@ -10,14 +10,14 @@ import './App.scss';
 const App = () => {
   return (
     <div className='App'>
-      <NavbarMenuState>
-        <ProjectModalState>
+      <NavbarMenuProvider>
+        <ProjectModalProvider>
           <Router>
             <Navbar />
             <Routes />
           </Router>
-        </ProjectModalState>
-      </NavbarMenuState>
+        </ProjectModalProvider>
+      </NavbarMenuProvider>
     </div>
   );
 };
