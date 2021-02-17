@@ -18,7 +18,9 @@ const ProjectCard = ({ project }) => {
     technologies,
     github,
     url,
+    demo,
     isMobileApp,
+    isDesignPrototype,
   } = project;
 
   return (
@@ -27,11 +29,13 @@ const ProjectCard = ({ project }) => {
         className='ProjectCard_image-container'
         onClick={() => toggleModalAction(project)}
       >
-        <img
-          className={classnames('ProjectCard_image', isMobileApp && 'mobile')}
-          src={images[0]}
-          alt='screenshot'
-        />
+        {images?.length && (
+          <img
+            className={classnames('ProjectCard_image', isMobileApp && 'mobile')}
+            src={images[0]}
+            alt='screenshot'
+          />
+        )}
       </div>
       <div className='ProjectCard_bottom'>
         <div className='ProjectCard_details'>
@@ -62,11 +66,15 @@ const ProjectCard = ({ project }) => {
               <PrimaryExternalLink link={url}>Visit Site</PrimaryExternalLink>
             </PrimaryButton>
           )}
-          <PrimaryButton>
-            <PrimaryExternalLink link={github}>
-              Check Github
-            </PrimaryExternalLink>
-          </PrimaryButton>
+          {isDesignPrototype ? (
+            <PrimaryExternalLink link={demo}>Watch Demo</PrimaryExternalLink>
+          ) : (
+            <PrimaryButton>
+              <PrimaryExternalLink link={github}>
+                Check Github
+              </PrimaryExternalLink>
+            </PrimaryButton>
+          )}
         </div>
       </div>
     </div>
