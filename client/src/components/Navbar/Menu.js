@@ -1,7 +1,7 @@
 import classnames from 'classnames';
 import { useContext } from 'react';
 
-import NavbarMenuContext from '../../context/navbarMenu/navbarMenuContext';
+import { NavbarMenuContext } from '../../context/NavbarMenuProvider';
 
 import NavbarItem from './Item';
 import NavbarMenuToggler from './Toggler';

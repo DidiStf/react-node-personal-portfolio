@@ -5,7 +5,7 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 import ImageSlider from '../ImageSlider/Slider';
 
-import ProjectModalContext from '../../context/projectModal/projectModalContext';
+import { ProjectModalContext } from '../../context/ProjectModalProvider';
 
 import './Modal.scss';
 
