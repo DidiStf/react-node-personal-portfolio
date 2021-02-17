@@ -1,13 +1,20 @@
-import img1 from '../../screenshots/my-contacts/01.jpg';
-import img2 from '../../screenshots/my-contacts/02.jpg';
-import img3 from '../../screenshots/my-contacts/03.jpg';
-import img4 from '../../screenshots/my-contacts/04.jpg';
+import { importAll } from '../../../utils/importAllScreenshots';
+
+const rawImages = importAll(
+  require.context(
+    '../../screenshots/my-contacts',
+    false,
+    /\.(jpg)$/ // (png|jpe?g|svg)
+  )
+);
+
+const images = Object.values(rawImages).map((v) => v.default);
 
 export const myContacts = {
   name: 'My Contacts',
   description:
     'MERN Stack Contact Manager Web Application that allows you to create an account and manage your personal and professional contacts (name, email, phone and category).',
-  images: [img1, img2, img3, img4],
+  images,
   technologies: [
     'React',
     'Node',
@@ -21,4 +28,5 @@ export const myContacts = {
   github: 'https://github.com/DidiStf/mern-my-contacts-app',
   url: 'https://my-contacts-didistf.herokuapp.com/',
   isMobileApp: false,
+  isDesignPrototype: false,
 };

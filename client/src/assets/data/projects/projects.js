@@ -1,5 +1,6 @@
 import { gameMazeApi } from './gameMazeApi';
 import { gameMazeDoc } from './gameMazeDoc';
+import { gameMazePrototype } from './gameMazePrototype';
 import { githubFinder } from './githubFinder';
 import { greatPlaces } from './greatPlaces';
 import { guessTheNumber } from './guessTheNumber';
@@ -12,6 +13,7 @@ export const projects = [
   greatPlaces,
   gameMazeApi,
   shopApp,
+  gameMazePrototype,
   githubFinder,
   gameMazeDoc,
   myMeals,
