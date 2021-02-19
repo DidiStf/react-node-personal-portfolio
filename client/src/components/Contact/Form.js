@@ -6,6 +6,8 @@ import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 
 import { ContactFormContext } from '../../context/ContactFormProvider';
 
+import { translate } from '../../utils/translate';
+
 import './Form.scss';
 
 const initialState = {
@@ -88,7 +90,9 @@ const ContactForm = () => {
   return (
     <div className='ContactForm'>
       <form className='ContactForm_form'>
-        <h2 className='ContactForm_form_title'>Contact Me</h2>
+        <h2 className='ContactForm_form_title'>
+          {translate('contact.heading')}
+        </h2>
         <div className='ContactForm_form_input-box'>
           <input
             className='ContactForm_form_input'
@@ -99,7 +103,7 @@ const ContactForm = () => {
             value={name}
           />
           <span className='ContactForm_form_label'>
-            Full Name
+            {translate('contact.form.name')}
             <span className={classnames(nameError && 'error')}>*</span>
           </span>
         </div>
@@ -113,7 +117,7 @@ const ContactForm = () => {
             value={email}
           />
           <span className='ContactForm_form_label'>
-            Email Address
+            {translate('contact.form.email')}
             <span className={classnames(emailError && 'error')}>*</span>
           </span>
         </div>
@@ -127,7 +131,7 @@ const ContactForm = () => {
             value={subject}
           />
           <span className='ContactForm_form_label'>
-            Subject
+            {translate('contact.form.subject')}
             <span className={classnames(subjectError && 'error')}>*</span>
           </span>
         </div>
@@ -141,7 +145,7 @@ const ContactForm = () => {
             value={message}
           />
           <span className='ContactForm_form_label'>
-            Message
+            {translate('contact.form.message')}
             <span className={classnames(messageError && 'error')}>*</span>
           </span>
         </div>
@@ -158,14 +162,18 @@ const ContactForm = () => {
                 className='ContactForm_form_button_icon'
               />
             ) : (
-              'Send'
+              translate('contact.form.sendButton')
             )}
           </button>
           {success && (
-            <span className='ContactForm_form_message'>Email Sent!</span>
+            <span className='ContactForm_form_message'>
+              {translate('contact.form.confirmation')}
+            </span>
           )}
           {error && (
-            <span className='ContactForm_form_message'>An error ocurred.</span>
+            <span className='ContactForm_form_message'>
+              {translate('contact.form.error')}
+            </span>
           )}
         </div>
       </form>
