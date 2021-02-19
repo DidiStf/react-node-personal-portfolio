@@ -53,7 +53,7 @@ const bg = {
       form: {
         name: 'Име и Фамилия',
         email: 'Email Адрес',
-        subject: 'Предмет',
+        subject: 'Тема',
         message: 'Съобщение',
         sendButton: 'Изпрати',
         confirmation: 'Изпратено!',
