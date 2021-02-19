@@ -5,11 +5,15 @@ import PrimaryButton from '../Buttons/PrimaryButton';
 import PrimaryExternalLink from '../Buttons/PrimaryExternalLink';
 
 import { ProjectModalContext } from '../../context/ProjectModalProvider';
+import { TranslationLocaleContext } from '../../context/TranslationLocaleProvider';
+
+import { translate } from '../../utils/translate';
 
 import './Card.scss';
 
 const ProjectCard = ({ project }) => {
   const { toggleModalAction } = useContext(ProjectModalContext);
+  const { locale } = useContext(TranslationLocaleContext);
 
   const {
     name,
@@ -41,7 +45,7 @@ const ProjectCard = ({ project }) => {
         <div className='ProjectCard_details'>
           <h3>{name}</h3>
           <div className='ProjectCard_technologies'>
-            <strong>Technologies: </strong>
+            <strong>{translate('projects.technologies')} : </strong>
             {technologies.map((tech, i) => (
               <span key={i} className='ProjectCard_technologies-tech'>
                 {tech}
@@ -51,27 +55,31 @@ const ProjectCard = ({ project }) => {
           </div>
           <p>
             <strong>
-              <u>Description</u>:{' '}
+              <u>{translate('projects.description')}</u> :{' '}
             </strong>
-            {description}
+            {description[locale]}
           </p>
         </div>
         <div className='ProjectCard_actions'>
           {isMobileApp ? (
             <PrimaryButton onClick={() => toggleModalAction(project)}>
-              See More
+              {translate('projects.seeMoreBtn')}
             </PrimaryButton>
           ) : (
             <PrimaryButton>
-              <PrimaryExternalLink link={url}>Visit Site</PrimaryExternalLink>
+              <PrimaryExternalLink link={url}>
+                {translate('projects.visitSiteBtn')}
+              </PrimaryExternalLink>
             </PrimaryButton>
           )}
           {isDesignPrototype ? (
-            <PrimaryExternalLink link={demo}>Watch Demo</PrimaryExternalLink>
+            <PrimaryExternalLink link={demo}>
+              {translate('projects.watchDemoBtn')}
+            </PrimaryExternalLink>
           ) : (
             <PrimaryButton>
               <PrimaryExternalLink link={github}>
-                Check Github
+                {translate('projects.checkGithubBtn')}
               </PrimaryExternalLink>
             </PrimaryButton>
           )}
