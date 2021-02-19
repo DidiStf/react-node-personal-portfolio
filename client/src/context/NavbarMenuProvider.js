@@ -2,11 +2,7 @@ import { createContext, useReducer } from 'react';
 
 import { TOGGLE_MENU } from './types';
 
-const initialState = {
-  open: false,
-};
-
-const navbarMenuReducer = (state = initialState, action) => {
+const navbarMenuReducer = (state, action) => {
   switch (action.type) {
     case TOGGLE_MENU: {
       return {
@@ -22,7 +18,9 @@ const navbarMenuReducer = (state = initialState, action) => {
 export const NavbarMenuContext = createContext();
 
 export const NavbarMenuProvider = ({ children }) => {
-  const initialState = [];
+  const initialState = {
+    open: false,
+  };
 
   const [state, dispatch] = useReducer(navbarMenuReducer, initialState);
 
