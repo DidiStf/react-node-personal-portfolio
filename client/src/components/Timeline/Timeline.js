@@ -1,14 +1,21 @@
+import { useContext } from 'react';
+
 import timelineData from '../../assets/data/timeline';
 import TimelineItem from './Item';
+
+import { TranslationLocaleContext } from '../../context/TranslationLocaleProvider';
 
 import './Timeline.scss';
 
 const Timeline = () => {
+  const { locale } = useContext(TranslationLocaleContext);
+  const data = timelineData[locale];
+
   return (
-    timelineData.length && (
+    data.length && (
       <div className='Timeline'>
-        {timelineData.map((data, i) => (
-          <TimelineItem data={data} key={i} />
+        {data.map((d, i) => (
+          <TimelineItem data={d} key={i} />
         ))}
       </div>
     )
