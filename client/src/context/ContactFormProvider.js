@@ -8,13 +8,7 @@ import {
   SET_CONTACT_SUCCESS,
 } from './types';
 
-const initialState = {
-  success: false,
-  loading: false,
-  error: false,
-};
-
-const contactFormReducer = (state = initialState, action) => {
+const contactFormReducer = (state, action) => {
   switch (action.type) {
     case SET_CONTACT_ERROR: {
       return {
@@ -52,7 +46,11 @@ const contactFormReducer = (state = initialState, action) => {
 export const ContactFormContext = createContext();
 
 export const ContactFormProvider = ({ children }) => {
-  const initialState = [];
+  const initialState = {
+    success: false,
+    loading: false,
+    error: false,
+  };
 
   const [state, dispatch] = useReducer(contactFormReducer, initialState);
 
