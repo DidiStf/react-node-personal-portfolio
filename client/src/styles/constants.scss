@@ -28,38 +28,129 @@ $breakpoint-xxs: 370px;
 
 $primary-font: 'Poppins', 'Roboto', sans-serif;
 
-/* Uppercase letters total path length */
-$letter-D-lg: 186.452px;
-$letter-S-lg: 169.319px;
+/* Uppercase English letters total path length */
+$letter-D-en: 186.452px;
+$letter-S-en: 169.319px;
 
-/* Lowercase letters total path length */
-$letter-a-lg: 162.801px;
-$letter-b-lg: 181.22px;
-$letter-c-lg: 133.485px;
-$letter-d-lg: 181.321px;
-$letter-e-lg: 164.177px;
-$letter-f-lg: 111.721px;
-$letter-i-lg: 95.973px;
-$letter-k-lg: 169.102px;
-$letter-l-lg: 88px;
-$letter-n-lg: 147.804px;
-$letter-o-lg: 139.406px;
-$letter-p-lg: 188.88px;
-$letter-r-lg: 90.336px;
-$letter-s-lg: 144.775px;
-$letter-t-lg: 110.344px;
-$letter-u-lg: 147.778px;
-$letter-v-lg: 127.25px;
-$letter-w-lg: 220.793px;
-$letter-y-lg: 152.541px;
+/* Uppercase French letters total path length */
+$letter-D-fr: 187.233px;
+$letter-S-fr: 175.141px;
 
-/* Special characters path length */
-$dot-lg: 26.619px;
-$dash-lg: 54.2px;
+/* Uppercase Cyrillic letters total path length */
+$letter-D-bg: 258.01px;
+$letter-S-bg: 147.275px;
+
+/* Lowercase English letters total path length */
+$letter-a-en: 163.003px;
+$letter-b-en: 181.22px;
+$letter-c-en: 133.485px;
+$letter-d-en: 181.321px;
+$letter-e-en: 164.177px;
+$letter-f-en: 111.721px;
+$letter-i-en: 95.973px;
+$letter-k-en: 169.102px;
+$letter-l-en: 88px;
+$letter-n-en: 147.804px;
+$letter-o-en: 139.406px;
+$letter-p-en: 188.88px;
+$letter-r-en: 90.336px;
+$letter-s-en: 144.775px;
+$letter-t-en: 110.344px;
+$letter-u-en: 147.778px;
+$letter-v-en: 127.25px;
+$letter-w-en: 220.793px;
+$letter-y-en: 152.541px;
+
+/* Lowercase French letters total path length */
+$letter-a-fr: 163.003px;
+$letter-b-fr: 168.573px;
+$letter-c-fr: 127.211px;
+$letter-d-fr: 168.49px;
+$letter-e-fr: 151.07px;
+$letter-e-fr-accent: 203.589px;
+$letter-f-fr: 118.805px;
+$letter-i-fr: 107.788px;
+$letter-k-fr: 166.095px;
+$letter-l-fr: 94.744px;
+$letter-n-fr: 155.658px;
+$letter-o-fr: 137.706px;
+$letter-p-fr: 176.642px;
+$letter-s-fr: 139.684px;
+$letter-t-fr: 115.715px;
+$letter-u-fr: 144.45px;
+$letter-v-fr: 134.792px;
+$letter-w-fr: 213.045px;
+$letter-y-fr: 160.914px;
+
+/* Lowercase Spanish letters total path length */
+$letter-a-es: 163.003px;
+$letter-b-es: 181.932px;
+$letter-c-es: 137.292px;
+$letter-d-es: 181.842px;
+$letter-e-es: 163.041px;
+$letter-f-es: 118.705px;
+$letter-k-es: 179.256px;
+$letter-l-es: 94.744px;
+$letter-o-es: 137.706px;
+$letter-r-es: 98.612px;
+$letter-s-es: 150.753px;
+$letter-t-es: 115.715px;
+$letter-u-es: 155.896px;
+$letter-w-es: 229.927px;
+
+/* Lowercase Cyrillic letters total path length */
+$letter-a-bg: 157.341px;
+$letter-e-bg: 155.312px;
+$letter-f-bg: 237.937px;
+$letter-i-bg: 177.805px;
+$letter-l-bg: 152.191px;
+$letter-n-bg: 154.647px;
+$letter-o-bg: 138.296px;
+$letter-t-bg: 109.511px;
+$letter-v-bg: 166.11px;
+$letter-ya-bg: 155.355px;
+
+/* Special English characters path length */
+$dot-en: 26.619px;
+$dash-en: 54.2px;
+
+/* Special French characters path length */
+$dot-fr-name: 32.059px;
+$dot-fr-dev: 29.705px;
+$dash-fr: 56.084px;
+
+/* Special Spanish characters path length */
+$dot-es: 32.059px;
+$dash-es: 60.528px;
 
 /* Mixins */
 @mixin center-content {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Animations */
+@keyframes appear {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill-name {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: $secondary-color;
+  }
+}
+
+@keyframes fill-developer {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: $accent-color;
+  }
 }
