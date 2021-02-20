@@ -1,0 +1,96 @@
+@import '../../../styles/constants';
+
+.NameStrokeFr {
+  margin-left: 0.7rem;
+  margin-bottom: -1.1rem;
+
+  @media (min-width: $breakpoint-lg) {
+    margin-bottom: -1.3rem;
+  }
+
+  #nameFr {
+    height: 54px;
+    width: 206.75px;
+    animation: fill-name 0.5s ease forwards 3s;
+
+    @media (min-width: $breakpoint-xs) {
+      width: 300px;
+    }
+
+    @media (min-width: $breakpoint-lg) {
+      width: 369.2px;
+    }
+
+    @media (min-width: $breakpoint-xl) {
+      width: 430px;
+    }
+  }
+
+  #nameFr path:nth-child(1) {
+    stroke-dasharray: $letter-D-fr;
+  }
+
+  #nameFr path:nth-child(2) {
+    stroke-dasharray: $letter-i-fr;
+  }
+
+  #nameFr path:nth-child(3) {
+    stroke-dasharray: $letter-l-fr;
+  }
+
+  #nameFr path:nth-child(4) {
+    stroke-dasharray: $letter-y-fr;
+  }
+
+  #nameFr path:nth-child(5) {
+    stroke-dasharray: $letter-a-fr;
+  }
+
+  #nameFr path:nth-child(6) {
+    stroke-dasharray: $letter-n-fr;
+  }
+
+  #nameFr path:nth-child(7) {
+    stroke-dasharray: $letter-a-fr;
+  }
+
+  #nameFr path:nth-child(8) {
+    stroke-dasharray: $letter-S-fr;
+  }
+
+  #nameFr path:nth-child(9) {
+    stroke-dasharray: $letter-t-fr;
+  }
+
+  #nameFr path:nth-child(10) {
+    stroke-dasharray: $letter-e-fr-accent;
+  }
+
+  #nameFr path:nth-child(11) {
+    stroke-dasharray: $letter-f-fr;
+  }
+
+  #nameFr path:nth-child(12) {
+    stroke-dasharray: $letter-a-fr;
+  }
+
+  #nameFr path:nth-child(13) {
+    stroke-dasharray: $letter-n-fr;
+  }
+
+  #nameFr path:nth-child(14) {
+    stroke-dasharray: $letter-o-fr;
+  }
+
+  #nameFr path:nth-child(15) {
+    stroke-dasharray: $letter-v-fr;
+  }
+
+  #nameFr path:nth-child(16) {
+    stroke-dasharray: $letter-a-fr;
+  }
+
+  #nameFr path:nth-child(17) {
+    stroke-dasharray: $dot-fr-name;
+  }
+}

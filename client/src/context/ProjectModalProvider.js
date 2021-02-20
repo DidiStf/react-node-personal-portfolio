@@ -2,12 +2,7 @@ import { createContext, useReducer } from 'react';
 
 import { TOGGLE_PROJECT_MODAL } from './types';
 
-const initialState = {
-  open: false,
-  currentProject: null,
-};
-
-const projectModalReducer = (state = initialState, action) => {
+const projectModalReducer = (state, action) => {
   switch (action.type) {
     case TOGGLE_PROJECT_MODAL: {
       return {
@@ -24,7 +19,10 @@ const projectModalReducer = (state = initialState, action) => {
 export const ProjectModalContext = createContext();
 
 export const ProjectModalProvider = ({ children }) => {
-  const initialState = [];
+  const initialState = {
+    open: false,
+    currentProject: null,
+  };
 
   const [state, dispatch] = useReducer(projectModalReducer, initialState);
 

@@ -1,0 +1,88 @@
+@import '../../../styles/constants';
+
+.NameStrokeBg {
+  margin-left: 0.7rem;
+  margin-bottom: -1.1rem;
+
+  @media (min-width: $breakpoint-md) {
+    margin-bottom: -1.3rem;
+  }
+
+  #nameBg {
+    height: 54px;
+    width: 206.75px;
+    animation: fill-name 0.5s ease forwards 3s;
+
+    @media (min-width: $breakpoint-xs) {
+      width: 300px;
+    }
+
+    @media (min-width: $breakpoint-lg) {
+      width: 369.2px;
+    }
+
+    @media (min-width: $breakpoint-xl) {
+      width: 477px;
+    }
+  }
+
+  #nameBg path:nth-child(1) {
+    stroke-dasharray: $letter-D-bg;
+  }
+
+  #nameBg path:nth-child(2) {
+    stroke-dasharray: $letter-i-bg;
+  }
+
+  #nameBg path:nth-child(3) {
+    stroke-dasharray: $letter-l-bg;
+  }
+
+  #nameBg path:nth-child(4) {
+    stroke-dasharray: $letter-ya-bg;
+  }
+
+  #nameBg path:nth-child(5) {
+    stroke-dasharray: $letter-n-bg;
+  }
+
+  #nameBg path:nth-child(6) {
+    stroke-dasharray: $letter-a-bg;
+  }
+
+  #nameBg path:nth-child(7) {
+    stroke-dasharray: $letter-S-bg;
+  }
+
+  #nameBg path:nth-child(8) {
+    stroke-dasharray: $letter-t-bg;
+  }
+
+  #nameBg path:nth-child(9) {
+    stroke-dasharray: $letter-e-bg;
+  }
+
+  #nameBg path:nth-child(10) {
+    stroke-dasharray: $letter-f-bg;
+  }
+
+  #nameBg path:nth-child(11) {
+    stroke-dasharray: $letter-a-bg;
+  }
+
+  #nameBg path:nth-child(12) {
+    stroke-dasharray: $letter-n-bg;
+  }
+
+  #nameBg path:nth-child(13) {
+    stroke-dasharray: $letter-o-bg;
+  }
+
+  #nameBg path:nth-child(14) {
+    stroke-dasharray: $letter-v-bg;
+  }
+
+  #nameBg path:nth-child(15) {
+    stroke-dasharray: $letter-a-bg;
+  }
+}

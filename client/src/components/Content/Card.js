@@ -14,7 +14,7 @@ const ContentCard = ({ heading, children }) => {
 };
 
 ContentCard.propTypes = {
-  heading: PropTypes.string.isRequired,
+  heading: PropTypes.node.isRequired,
   children: PropTypes.node.isRequired,
 };
 

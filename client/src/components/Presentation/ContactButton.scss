@@ -7,9 +7,9 @@
     position: absolute;
     bottom: 6rem;
     padding: 0.7rem;
-    cursor: pointer;
     background: $secondary-color;
     color: $accent-color;
+    border-radius: 3px;
     font-weight: 600;
     font-size: 1rem;
     text-transform: uppercase;
@@ -17,6 +17,7 @@
     opacity: 0;
     animation: fade 0.5s ease forwards 4s;
     user-select: none;
+    cursor: pointer;
 
     @media (min-width: $breakpoint-xs) {
       font-size: 1.3rem;

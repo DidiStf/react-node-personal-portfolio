@@ -88,14 +88,16 @@
       padding: 8px 20px;
       margin-top: -10px;
       min-width: 100px !important;
-      cursor: pointer;
       background: $secondary-color !important;
       color: $accent-color;
       font-size: 1.3rem;
       font-weight: 400;
       border: none !important;
+      border-radius: 3px;
       text-transform: uppercase;
       letter-spacing: 4px;
+      user-select: none;
+      cursor: pointer;
 
       &:focus {
         background: $primary-color !important;

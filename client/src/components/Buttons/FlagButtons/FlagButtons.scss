@@ -1,0 +1,9 @@
+@import '../../../styles/constants';
+
+.FlagButtons {
+  display: flex;
+  z-index: 1500 !important;
+  position: absolute;
+  top: 16px;
+  left: 21px;
+}

@@ -1,0 +1,96 @@
+@import '../../../styles/constants';
+
+.NameStrokeEn {
+  margin-left: 0.7rem;
+  margin-bottom: -1.1rem;
+
+  @media (min-width: $breakpoint-lg) {
+    margin-bottom: -1.3rem;
+  }
+
+  #nameEn {
+    height: 54px;
+    width: 206.75px;
+    animation: fill-name 0.5s ease forwards 3s;
+
+    @media (min-width: $breakpoint-xs) {
+      width: 300px;
+    }
+
+    @media (min-width: $breakpoint-lg) {
+      width: 369.2px;
+    }
+
+    @media (min-width: $breakpoint-xl) {
+      width: 477px;
+    }
+  }
+
+  #nameEn path:nth-child(1) {
+    stroke-dasharray: $letter-D-en;
+  }
+
+  #nameEn path:nth-child(2) {
+    stroke-dasharray: $letter-i-en;
+  }
+
+  #nameEn path:nth-child(3) {
+    stroke-dasharray: $letter-l-en;
+  }
+
+  #nameEn path:nth-child(4) {
+    stroke-dasharray: $letter-y-en;
+  }
+
+  #nameEn path:nth-child(5) {
+    stroke-dasharray: $letter-a-en;
+  }
+
+  #nameEn path:nth-child(6) {
+    stroke-dasharray: $letter-n-en;
+  }
+
+  #nameEn path:nth-child(7) {
+    stroke-dasharray: $letter-a-en;
+  }
+
+  #nameEn path:nth-child(8) {
+    stroke-dasharray: $letter-S-en;
+  }
+
+  #nameEn path:nth-child(9) {
+    stroke-dasharray: $letter-t-en;
+  }
+
+  #nameEn path:nth-child(10) {
+    stroke-dasharray: $letter-e-en;
+  }
+
+  #nameEn path:nth-child(11) {
+    stroke-dasharray: $letter-f-en;
+  }
+
+  #nameEn path:nth-child(12) {
+    stroke-dasharray: $letter-a-en;
+  }
+
+  #nameEn path:nth-child(13) {
+    stroke-dasharray: $letter-n-en;
+  }
+
+  #nameEn path:nth-child(14) {
+    stroke-dasharray: $letter-o-en;
+  }
+
+  #nameEn path:nth-child(15) {
+    stroke-dasharray: $letter-v-en;
+  }
+
+  #nameEn path:nth-child(16) {
+    stroke-dasharray: $letter-a-en;
+  }
+
+  #nameEn path:nth-child(17) {
+    stroke-dasharray: $dot-en;
+  }
+}

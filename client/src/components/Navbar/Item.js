@@ -20,7 +20,7 @@ const NavbarItem = ({ children, className, onClick, path, ...props }) => {
 };
 
 NavbarItem.propTypes = {
-  children: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
   className: PropTypes.string,
   onClick: PropTypes.func,
   path: PropTypes.string.isRequired,

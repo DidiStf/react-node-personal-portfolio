@@ -2,7 +2,7 @@
 
 .NavbarItem {
   list-style: none;
-  margin: 0 32px;
+  margin: 0 25px;
   transition: 0.5s;
 
   @media (max-width: $breakpoint-xl) {
@@ -14,14 +14,16 @@
     position: relative;
     text-decoration: none;
     padding: 0.3rem;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     color: $accent-color;
     text-transform: uppercase;
     transition: 0.5s;
     user-select: none;
+    white-space: nowrap;
+    overflow: hidden;
 
     &:hover {
-      transform: scale(2);
+      transform: scale(1.8);
       opacity: 1 !important;
 
       &::before {
