@@ -131,18 +131,39 @@ $dash-es: 60.528px;
 }
 
 /* Animations */
+@keyframes animate-background {
+  0% {
+    transform: translateY(0) rotate(0);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(-1500px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
 @keyframes appear {
   to {
     stroke-dashoffset: 0;
   }
 }
 
-@keyframes fill-name {
+@keyframes blink {
+  from,
+  to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: $secondary-color;
+  }
+}
+
+@keyframes fade {
   from {
-    fill: transparent;
+    opacity: 0;
   }
   to {
-    fill: $secondary-color;
+    opacity: 1;
   }
 }
 
@@ -152,5 +173,14 @@ $dash-es: 60.528px;
   }
   to {
     fill: $accent-color;
+  }
+}
+
+@keyframes fill-name {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: $secondary-color;
   }
 }

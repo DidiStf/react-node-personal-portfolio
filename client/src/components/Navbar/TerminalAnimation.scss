@@ -11,10 +11,6 @@
   font-size: 1.3rem;
   user-select: none;
 
-  @media (max-width: $breakpoint-xxs) {
-    font-size: 1rem;
-  }
-
   &_cursor {
     height: 1.5rem;
     width: 0.5rem;
@@ -24,5 +20,9 @@
     -ms-animation: 1s blink step-end infinite;
     -o-animation: 1s blink step-end infinite;
     animation: 1.5s blink step-end infinite;
+  }
+
+  @media (max-width: $breakpoint-xxs) {
+    font-size: 1rem;
   }
 }

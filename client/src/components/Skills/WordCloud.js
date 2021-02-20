@@ -55,7 +55,7 @@ const SkillsWordCloud = () => {
     opacityOut: 0.3,
     opacitySpeed: 6,
     fov: 800,
-    speed: 0.2,
+    speed: 0.1,
     fontFamily: 'Oswald, Arial, sans-serif',
     fontSize: windowWidth <= 550 ? '14' : '17',
     fontColor: '#f5497d',

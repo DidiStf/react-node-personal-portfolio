@@ -16,28 +16,12 @@
     cursor: pointer;
     z-index: 10;
 
-    @media (max-width: $breakpoint-md) {
-      top: 100%;
-    }
-
     &.left {
       left: 0;
-      @media (max-width: $breakpoint-md) {
-        left: 41.5%;
-      }
-      @media (max-width: $breakpoint-xs) {
-        left: 35%;
-      }
     }
 
     &.right {
       right: 0;
-      @media (max-width: $breakpoint-md) {
-        right: 41.5%;
-      }
-      @media (max-width: $breakpoint-xs) {
-        right: 35%;
-      }
     }
   }
 
@@ -61,6 +45,32 @@
       opacity: 1;
       transition-duration: 0.75s;
       transform: scale(0.9);
+    }
+  }
+
+  @media (max-width: $breakpoint-md) {
+    &_arrow {
+      top: 100%;
+
+      &.left {
+        left: 41.5%;
+      }
+
+      &.right {
+        right: 41.5%;
+      }
+    }
+  }
+
+  @media (max-width: $breakpoint-xs) {
+    &_arrow {
+      &.left {
+        left: 35%;
+      }
+
+      &.right {
+        right: 35%;
+      }
     }
   }
 }

@@ -11,19 +11,11 @@
     font-size: 1.3rem;
     margin-bottom: 10px;
     user-select: none;
-
-    @media (max-width: $breakpoint-s) {
-      font-size: 1.1rem;
-    }
   }
 
   &_info {
     font-size: 1.15rem;
     user-select: none;
-
-    @media (max-width: $breakpoint-s) {
-      font-size: 1rem;
-    }
 
     & i,
     br,
@@ -35,5 +27,15 @@
 
   @media (max-width: $breakpoint-xl) {
     padding-right: 0;
+  }
+
+  @media (max-width: $breakpoint-s) {
+    &_heading {
+      font-size: 1.1rem;
+    }
+
+    &_info {
+      font-size: 1rem;
+    }
   }
 }

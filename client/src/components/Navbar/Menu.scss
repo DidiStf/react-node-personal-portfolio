@@ -24,10 +24,6 @@
     padding: 0;
     display: flex;
 
-    @media (max-width: $breakpoint-xl) {
-      flex-direction: column;
-    }
-
     &:hover {
       .NavbarItem_link {
         opacity: 0.2;
@@ -35,8 +31,14 @@
       }
     }
   }
-}
 
-.resume {
-  background-color: $secondary-color;
+  .resume {
+    background-color: $secondary-color;
+  }
+
+  @media (max-width: $breakpoint-xl) {
+    &_list {
+      flex-direction: column;
+    }
+  }
 }

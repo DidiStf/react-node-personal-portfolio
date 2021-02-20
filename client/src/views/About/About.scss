@@ -9,4 +9,10 @@
   & .ContentCard {
     max-width: 1200px;
   }
+
+  @media (max-width: $breakpoint-xl) {
+    .ContentCard_content {
+      flex-direction: column-reverse;
+    }
+  }
 }
