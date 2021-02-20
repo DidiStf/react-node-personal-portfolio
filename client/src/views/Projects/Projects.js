@@ -6,15 +6,13 @@ import { translate } from '../../utils/translate';
 
 import './Projects.scss';
 
-const ProjectsView = () => {
-  return (
-    <div className='ProjectsView'>
-      <ContentCard heading={translate('projects.heading')}>
-        <ProjectsCardList />
-      </ContentCard>
-      <ProjectModal />
-    </div>
-  );
-};
+const ProjectsView = () => (
+  <div className='ProjectsView'>
+    <ContentCard heading={translate('projects.heading')}>
+      <ProjectsCardList />
+    </ContentCard>
+    <ProjectModal />
+  </div>
+);
 
 export default ProjectsView;

@@ -5,15 +5,13 @@ import { ContactFormProvider } from '../../context/ContactFormProvider';
 
 import './Card.scss';
 
-const ContactCard = () => {
-  return (
-    <ContactFormProvider>
-      <div className='ContactCard'>
-        <ContactForm />
-        <ContactImage />
-      </div>
-    </ContactFormProvider>
-  );
-};
+const ContactCard = () => (
+  <ContactFormProvider>
+    <div className='ContactCard'>
+      <ContactForm />
+      <ContactImage />
+    </div>
+  </ContactFormProvider>
+);
 
 export default ContactCard;

@@ -5,20 +5,18 @@ import PrimaryButton from './PrimaryButton';
 
 import './PrimaryExternalLink.scss';
 
-const PrimaryExternalLink = ({ children, className, link, onClick }) => {
-  return (
-    <PrimaryButton onClick={onClick}>
-      <a
-        className={classnames('PrimaryExternalLink', className)}
-        href={link}
-        rel='noreferrer noopener'
-        target='_blank'
-      >
-        {children}
-      </a>
-    </PrimaryButton>
-  );
-};
+const PrimaryExternalLink = ({ children, className, link, onClick }) => (
+  <PrimaryButton onClick={onClick}>
+    <a
+      className={classnames('PrimaryExternalLink', className)}
+      href={link}
+      rel='noreferrer noopener'
+      target='_blank'
+    >
+      {children}
+    </a>
+  </PrimaryButton>
+);
 
 PrimaryExternalLink.propTypes = {
   children: PropTypes.node.isRequired,

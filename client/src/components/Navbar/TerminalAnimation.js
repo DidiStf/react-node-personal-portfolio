@@ -1,12 +1,10 @@
 import './TerminalAnimation.scss';
 
-const TerminalAnimation = () => {
-    return (
-        <div className="TerminalAnimation">
-            didistf@xmg-fusion: ~$
-            <div className="TerminalAnimation_cursor"> </div>
-        </div>
-    )
-}
+const TerminalAnimation = () => (
+  <div className='TerminalAnimation'>
+    didistf@xmg-fusion: ~$
+    <div className='TerminalAnimation_cursor'> </div>
+  </div>
+);
 
-export default TerminalAnimation
+export default TerminalAnimation;
