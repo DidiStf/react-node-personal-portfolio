@@ -3,7 +3,6 @@ const express = require('express');
 const dotenv = require('dotenv');
 const path = require('path');
 const morgan = require('morgan');
-const colors = require('colors');
 
 const contact = require('./routes/contact');
 
