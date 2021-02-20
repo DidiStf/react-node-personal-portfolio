@@ -5,6 +5,7 @@
   width: 40px;
   cursor: pointer;
   margin: 0 10px;
+  user-select: none;
 
   @media (max-width: $breakpoint-xl) {
     height: 35px;
@@ -20,10 +21,18 @@
     height: 100%;
     width: 100%;
     border-radius: 50%;
-    border: none;
 
     &.active {
-      border: 3px solid $secondary-color;
+      box-shadow: 0px 0px 8px transparentize($accent-color, 0.5);
+      transform: scale(1.15);
+
+      &:hover {
+        transform: scale(1.15);
+      }
+    }
+
+    &:hover {
+      transform: scale(1.15);
     }
   }
 }
