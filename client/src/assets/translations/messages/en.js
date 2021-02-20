@@ -29,7 +29,7 @@ const en = {
       bachelorsDegree:
         'Full-Stack Web and Mobile Application Development and Design.',
       info4:
-        "I mainly run on VS code and good coffee. I'm highly motivated and passionate about learning new skills and best practices. I also like keeping me up to date with the latest technologies and trying them by building different projects.",
+        "I mainly run on code and good coffee. I'm highly motivated and passionate about learning new skills and best practices. I also like keeping me up to date with the latest technologies and trying them by building different projects.",
       interestsHeading: 'Interests: ',
       info5:
         "video games, retro gaming consoles, board games, electronics, languages and new technologies. Well, I'm a geek.",

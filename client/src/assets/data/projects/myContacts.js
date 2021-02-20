@@ -19,9 +19,9 @@ export const myContacts = {
     [LOCALES.FRENCH]:
       "Application Web de gestion de contacts de type MERN Stack qui permet à l'utilisateur de créer un compte et de gérer ses contacts personnels et professionnels (nom, adresse email, numéro de télephone et catégorie).",
     [LOCALES.SPANISH]:
-      'Applicación Web de gestión de contactos de typo MERN Stack que permite al usuario de crear une cuenta y de administrar sus contactos personales y profesionales (nombre, correo electrónico, número de teléfono y categoría).',
+      'Aplicación Web de gestión de contactos de tipo MERN Stack que permite al usuario crear una cuenta y administrar sus contactos personales y profesionales (nombre, correo electrónico, número de teléfono y categoría).',
     [LOCALES.BULGARIAN]:
-      'Уеб Апликация за управление нан контакти (MERN Stack), която позволява на потребителите да си създадат акаунт и да управляват своите лични и професионални контакти (име, електроннен адрес, телегонен номер и категория).',
+      'Уеб Апликация за управление на контакти (MERN Stack), която позволява на потребителите да създадат акаунт и да управляват своите лични и професионални контакти (име, електроннен адрес, телефонен номер и категория).',
   },
   images,
   technologies: [

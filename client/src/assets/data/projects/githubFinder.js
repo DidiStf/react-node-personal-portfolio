@@ -21,7 +21,7 @@ export const githubFinder = {
     [LOCALES.SPANISH]:
       'Aplicación Web desarrollada en React que permite buscar perfiles GitHub y consultar los datos principales (nombre de usuario, avatar, bio, sitio web, followers, following, etc.) y los cinco repositorios públicos más recientes para cada usuario así que visitar su página Github oficial. La aplicación usa la API de Github y React Context para la gestión del estado.',
     [LOCALES.BULGARIAN]:
-      'Уеб Апликация разработена с React, която позволява търсенето на GitHub потребители и дава основна информация (потребителски име, аватар, биография, уебсайт, последователи и последвани потребители и т.н.), петте най-скорошни хранилища, както и съдържа препратка към официалната Github страница на всеки потребител. Приложението използва огициалната Github API и React Context за управление на състоянието.',
+      'Уеб Апликация разработена с React, която позволява търсенето на GitHub потребителски профили и дава основна информация (потребителско име, аватар, биография, уебсайт, последователи и последвани потребители и т.н.), както и петте най-скорошни хранилища. Съдържа и препратка към официалната Github страница на всеки потребител. Приложението използва огициалната Github API и React Context за управление на състоянието.',
   },
   images,
   technologies: ['React', 'JavaScript', 'Css', 'Github API'],

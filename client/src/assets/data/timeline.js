@@ -128,7 +128,7 @@ const data = {
       location: 'Nice, France',
       title: 'Master en Études Hispaniques et Hispano-Américaines',
       description:
-        'Master Recherche en Langues, Litteratures et Linguistiques Hispaniques et Hispano-Amériacaines',
+        'Master Recherche (Mention Très Bien) en Langues, Litteratures et Linguistiques Hispaniques et Hispano-Amériacaines',
       date: 'Août 2016 - Septembre 2018',
       tag: 'education',
     },
@@ -145,7 +145,8 @@ const data = {
       institution: 'Université de Sofia "St. Kliment Ohridski"',
       location: 'Sofia, Bulgarie',
       title: 'Licence en Lettres Hispaniques et Hispano-Américaines (Bac+4)',
-      description: "Diplôme de traducteur et professeur d'espagnol.",
+      description:
+        "Diplôme de traducteur et professeur d'espagnol (Obtenu avec les félicitations du jury).",
       date: 'Octobre 2011 - Septembre 2015',
       tag: 'education',
     },
@@ -164,7 +165,7 @@ const data = {
       location: 'Niza, Francia',
       title: 'Desarrolladora Web JavaScript Full-Stack',
       description:
-        'Participé en la construcciòn y el desarrollo de una plataforma web de streaming de vídeo, de VOD y de comunicación por vídeo en tiempo real. (React, Node.js, Express.js, MongoDB, Redux, WebRTC, WebSockets)',
+        'Participé en la construcciòn y el desarrollo de una plataforma web de streaming de vídeo, VOD y comunicación por vídeo en tiempo real. (React, Node.js, Express.js, MongoDB, Redux, WebRTC, WebSockets)',
       date: 'Dicicembre 2019 - Diciembre 2020',
       tag: 'empleo',
     },
@@ -172,14 +173,14 @@ const data = {
       institution: 'Instituto del Comercio y de los Servicios (ICS)',
       location: 'Niza, Francia',
       title: 'Desarrollo y Diseño de Aplicaciones Web y Móviles',
-      description: 'Título profesional de nivel Licenciatura',
+      description: 'Título profesional (nivel Grado)',
       date: 'Noviembre 2019 - Noviembre 2020',
       tag: 'educación',
     },
     {
       institution: 'Rheveo',
       location: 'Sophia Antipolis, Francia',
-      title: 'Desarrolladora Front-End',
+      title: 'Desarrolladora Web Front-End',
       description:
         'Participé en la contrucción de la interfaz usuario de una plataforma web que une Inteligencia Artificial y Psicología con el fin de evaluar y mejorar el rendimiento de las empresas a través del compromiso de sus collaboradores. (Vue.js, Element UI, JavaScript, CSS/Sass, Bootstrap, HTML)',
       date: 'Junio 2019 - Julio 2020',
@@ -206,23 +207,23 @@ const data = {
       location: 'Niza, Francia',
       title: 'Master en Estudios Hispánicos e Hispano-Americanos',
       description:
-        'Master Investigación en Languas, Litteraturas y Linguística Hispánicos e Hispano-Americanos',
+        'Master de Investigación en Languas, Litteraturas y Linguística Hispánicas e Hispano-Americanas',
       date: 'Agosto 2016 - Septiembre 2018',
       tag: 'educación',
     },
     {
       institution: 'TELUS International Europe',
       location: 'Sofía, Bulgaria',
-      title: 'Spécialista en Soporte Técnico (Fitbit)',
+      title: 'Especialista en Soporte Técnico (Fitbit)',
       description:
-        'Especialista en Soporte Técnico para la empresa Americana Fitbit. Soporte en español, inglés y francés por teléfono, por correo electrónico y en ñas redes sociales.',
+        'Especialista en Soporte Técnico para la empresa Americana Fitbit. Soporte en español, inglés y francés por teléfono, por correo electrónico y en las redes sociales.',
       date: 'Septiembre 2015 - Agosto 2016',
       tag: 'empleo',
     },
     {
       institution: 'Universidad de Sofía "St. Kliment Ohridski"',
       location: 'Sofía, Bulgaria',
-      title: 'Licenciatura en Estudios Hispánicos e Hispano-Americanos',
+      title: 'Grado en Estudios Hispánicos e Hispano-Americanos',
       description: 'Diploma de traductor y profesor de español.',
       date: 'Octubre 2011 - Septiembre 2015',
       tag: 'educación',
@@ -259,7 +260,7 @@ const data = {
       location: 'Софиа-Антиполис, Франция',
       title: 'Front-End Уеб Разработчик',
       description:
-        'Участвах в разработването на потребителски интерфейс за уеб платформа, която съчетава Изкуствен Интелект и Психология с цел оценка и подобряване на производителността на формите чрез ангажираността на служителите. (Vue.js, Element UI, JavaScript, CSS/Sass, Bootstrap, HTML)',
+        'Участвах в разработването на потребителски интерфейс за уеб платформа, която съчетава Изкуствен Интелект и Психология с цел оценка и подобряване на производителността на предприятията чрез ангажираността на служителите. (Vue.js, Element UI, JavaScript, CSS/Sass, Bootstrap, HTML)',
       date: 'Юни 2019 - Юли 2020',
       tag: 'работа',
     },

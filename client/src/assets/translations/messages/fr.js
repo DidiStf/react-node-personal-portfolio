@@ -28,7 +28,7 @@ const fr = {
       info3: "et j'ai un Titre Professionnel de ",
       bachelorsDegree: "Concepteur Développeur d'Application.",
       info4:
-        "Je me nourris principalement de code et de bon café. Je suis motivée et j'aime aquerir des nouvelles compétences, adopter des bonne pratiques, me tenir à jour des technologies les plus récentes et les mettre en pratique en développant différents projets.",
+        "Je me nourris principalement de code et de bon café. Je suis motivée et j'aime acquerir des nouvelles compétences, adopter des bonnes pratiques, me tenir à jour des technologies les plus récentes et les mettre en pratique en développant différents projets.",
       interestsHeading: 'Interêsts : ',
       info5:
         'jeux vidéos, retro gaming, jeux de plateau, électronique, langues et nouvelles technologies. Bon, je suis une geek.',
@@ -40,10 +40,10 @@ const fr = {
       heading: 'Projets',
       technologies: 'Technologies',
       description: 'Description',
-      visitSiteBtn: 'Visiter',
+      visitSiteBtn: 'Visiter Le Site',
       seeMoreBtn: 'Voir Plus',
       watchDemoBtn: 'Voir Demo',
-      checkGithubBtn: 'Github',
+      checkGithubBtn: 'Voir Github',
     },
     experience: {
       heading: 'Experience',
