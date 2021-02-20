@@ -66,22 +66,18 @@ const ProjectCard = ({ project }) => {
               {translate('projects.seeMoreBtn')}
             </PrimaryButton>
           ) : (
-            <PrimaryButton>
-              <PrimaryExternalLink link={url}>
-                {translate('projects.visitSiteBtn')}
-              </PrimaryExternalLink>
-            </PrimaryButton>
+            <PrimaryExternalLink link={url}>
+              {translate('projects.visitSiteBtn')}
+            </PrimaryExternalLink>
           )}
           {isDesignPrototype ? (
             <PrimaryExternalLink link={demo}>
               {translate('projects.watchDemoBtn')}
             </PrimaryExternalLink>
           ) : (
-            <PrimaryButton>
-              <PrimaryExternalLink link={github}>
-                {translate('projects.checkGithubBtn')}
-              </PrimaryExternalLink>
-            </PrimaryButton>
+            <PrimaryExternalLink link={github}>
+              {translate('projects.checkGithubBtn')}
+            </PrimaryExternalLink>
           )}
         </div>
       </div>
