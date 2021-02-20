@@ -4,26 +4,10 @@
   margin-left: 0.7rem;
   margin-bottom: -1.1rem;
 
-  @media (min-width: $breakpoint-md) {
-    margin-bottom: -1.3rem;
-  }
-
   #developerEn {
     width: 280px;
     height: 54px;
     animation: fill-developer 0.5s ease forwards 3.5s;
-
-    @media (min-width: $breakpoint-xs) {
-      width: 406.4px;
-    }
-
-    @media (min-width: $breakpoint-lg) {
-      width: 500px;
-    }
-
-    @media (min-width: $breakpoint-xl) {
-      width: 646px;
-    }
   }
 
   #developerEn path:nth-child(1) {
@@ -163,19 +147,26 @@
     stroke-dashoffset: $dot-en;
     animation: appear 2.5s ease forwards 0.5s;
   }
-}
 
-@keyframes appear {
-  to {
-    stroke-dashoffset: 0;
+  @media (min-width: $breakpoint-xs) {
+    #developerEn {
+      width: 406.4px;
+    }
   }
-}
 
-@keyframes fill-developer {
-  from {
-    fill: transparent;
+  @media (min-width: $breakpoint-md) {
+    margin-bottom: -1.1rem;
   }
-  to {
-    fill: $accent-color;
+
+  @media (min-width: $breakpoint-lg) {
+    #developerEn {
+      width: 500px;
+    }
+  }
+
+  @media (min-width: $breakpoint-xl) {
+    #developerEn {
+      width: 646px;
+    }
   }
 }

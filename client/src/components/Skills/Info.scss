@@ -4,25 +4,8 @@
   @include center-content;
   width: 100%;
 
-  @media (max-width: $breakpoint-xl) {
-    padding-right: 0;
-  }
-
   &_column {
     font-size: 1.15rem;
-
-    @media (max-width: $breakpoint-s) {
-      font-size: 1rem;
-      padding: 7px;
-    }
-
-    @media (max-width: $breakpoint-xs) {
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: $breakpoint-xxs) {
-      font-size: 0.7rem;
-    }
   }
 
   &_row {
@@ -39,5 +22,28 @@
     color: $secondary-color;
     margin: auto 0;
     margin-right: 10px;
+  }
+
+  @media (max-width: $breakpoint-xl) {
+    padding-right: 0;
+  }
+
+  @media (max-width: $breakpoint-s) {
+    &_column {
+      font-size: 1rem;
+      padding: 7px;
+    }
+  }
+
+  @media (max-width: $breakpoint-xs) {
+    &_column {
+      font-size: 0.9rem;
+    }
+  }
+
+  @media (max-width: $breakpoint-xxs) {
+    &_column {
+      font-size: 0.7rem;
+    }
   }
 }

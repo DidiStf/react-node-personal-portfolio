@@ -4,26 +4,10 @@
   margin-left: 0.7rem;
   margin-bottom: -1.1rem;
 
-  @media (min-width: $breakpoint-lg) {
-    margin-bottom: -1.3rem;
-  }
-
   #nameEn {
     height: 54px;
     width: 206.75px;
     animation: fill-name 0.5s ease forwards 3s;
-
-    @media (min-width: $breakpoint-xs) {
-      width: 300px;
-    }
-
-    @media (min-width: $breakpoint-lg) {
-      width: 369.2px;
-    }
-
-    @media (min-width: $breakpoint-xl) {
-      width: 477px;
-    }
   }
 
   #nameEn path:nth-child(1) {
@@ -92,5 +76,24 @@
 
   #nameEn path:nth-child(17) {
     stroke-dasharray: $dot-en;
+  }
+
+  @media (min-width: $breakpoint-xs) {
+    #nameEn {
+      width: 300px;
+    }
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    margin-bottom: -1.3rem;
+    #nameEn {
+      width: 369.2px;
+    }
+  }
+
+  @media (min-width: $breakpoint-xl) {
+    #nameEn {
+      width: 477px;
+    }
   }
 }

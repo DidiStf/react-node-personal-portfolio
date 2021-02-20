@@ -2,28 +2,12 @@
 
 .DeveloperAnimationEs {
   margin-left: 0.7rem;
-  margin-bottom: -1.1rem;
-
-  @media (min-width: $breakpoint-md) {
-    margin-bottom: -1.3rem;
-  }
+  margin-bottom: -0.8rem;
 
   #developerEs {
     width: 280px;
     height: 54px;
     animation: fill-developer 0.5s ease forwards 3.5s;
-
-    @media (min-width: $breakpoint-xs) {
-      width: 406.4px;
-    }
-
-    @media (min-width: $breakpoint-lg) {
-      width: 500px;
-    }
-
-    @media (min-width: $breakpoint-xl) {
-      width: 646px;
-    }
   }
 
   #developerEs path:nth-child(1) {
@@ -192,5 +176,30 @@
     stroke-dasharray: $dot-es;
     stroke-dashoffset: $dot-es;
     animation: appear 2.5s ease forwards 0.5s;
+  }
+
+  @media (min-width: $breakpoint-xs) {
+    #developerEs {
+      width: 430px;
+    }
+  }
+
+  @media (min-width: $breakpoint-md) {
+    #developerEs {
+      width: 450px;
+    }
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    #developerEs {
+      width: 550px;
+    }
+  }
+
+  @media (min-width: $breakpoint-xl) {
+    margin-bottom: -0.9rem;
+    #developerEs {
+      width: 700px;
+    }
   }
 }

@@ -22,7 +22,7 @@
       list-style: none;
       width: 25px;
       height: 25px;
-      background: rgba(255, 255, 255, 0.2);
+      background: transparentize($accent-color, 0.8);
       animation: animate-background 30s linear infinite;
       bottom: -500px;
 
@@ -71,16 +71,5 @@
         animation-duration: 20s;
       }
     }
-  }
-}
-
-@keyframes animate-background {
-  0% {
-    transform: translateY(0) rotate(0);
-    opacity: 0.3;
-  }
-  100% {
-    transform: translateY(-1500px) rotate(360deg);
-    opacity: 0;
   }
 }

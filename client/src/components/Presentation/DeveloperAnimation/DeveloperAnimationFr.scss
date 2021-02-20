@@ -4,26 +4,10 @@
   margin-left: 0.7rem;
   margin-bottom: -1.1rem;
 
-  @media (min-width: $breakpoint-md) {
-    margin-bottom: -1.3rem;
-  }
-
   #developerFr {
     width: 280px;
     height: 54px;
     animation: fill-developer 0.5s ease forwards 3.5s;
-
-    @media (min-width: $breakpoint-xs) {
-      width: 406.4px;
-    }
-
-    @media (min-width: $breakpoint-lg) {
-      width: 500px;
-    }
-
-    @media (min-width: $breakpoint-xl) {
-      width: 646px;
-    }
   }
 
   #developerFr path:nth-child(1) {
@@ -180,5 +164,27 @@
     stroke-dasharray: $dot-fr-dev;
     stroke-dashoffset: $dot-fr-dev;
     animation: appear 2.5s ease forwards 0.5s;
+  }
+
+  @media (min-width: $breakpoint-xs) {
+    #developerFr {
+      width: 406.4px;
+    }
+  }
+
+  @media (min-width: $breakpoint-md) {
+    margin-bottom: -1;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    #developerFr {
+      width: 500px;
+    }
+  }
+
+  @media (min-width: $breakpoint-xl) {
+    #developerFr {
+      width: 646px;
+    }
   }
 }

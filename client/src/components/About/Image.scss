@@ -6,10 +6,6 @@
   margin: 3rem 0;
   position: relative;
 
-  @media (max-width: $breakpoint-xl) {
-    margin-bottom: 5rem;
-  }
-
   &::before {
     position: relative;
     content: '';
@@ -19,13 +15,6 @@
     top: 25px;
     left: 25px;
     border-radius: 5px;
-
-    @media (max-width: $breakpoint-md) {
-      height: 250px;
-      width: 250px;
-      top: 15px;
-      left: 15px;
-    }
   }
 
   &_image {
@@ -33,8 +22,21 @@
     width: 350px;
     position: absolute;
     border-radius: 5px;
+  }
 
-    @media (max-width: $breakpoint-md) {
+  @media (max-width: $breakpoint-xl) {
+    margin-bottom: 5rem;
+  }
+
+  @media (max-width: $breakpoint-md) {
+    &::before {
+      height: 250px;
+      width: 250px;
+      top: 15px;
+      left: 15px;
+    }
+
+    &_image {
       height: 250px;
       width: 250px;
     }

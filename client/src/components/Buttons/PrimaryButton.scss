@@ -12,11 +12,11 @@
   user-select: none;
   cursor: pointer;
 
-  @media (min-width: $breakpoint-xs) {
-    font-size: 1rem;
-  }
-
   &:hover {
     transform: translateY(-2px);
+  }
+
+  @media (min-width: $breakpoint-xs) {
+    font-size: 1rem;
   }
 }

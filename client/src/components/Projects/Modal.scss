@@ -27,16 +27,6 @@
     position: relative;
     aspect-ratio: 16 / 9;
 
-    &.mobileSlider {
-      @media (max-width: $breakpoint-lg) {
-        aspect-ratio: 4 / 3;
-      }
-
-      @media (max-width: $breakpoint-s) {
-        aspect-ratio: 1 / 1.4;
-      }
-    }
-
     img {
       width: 100%;
     }
@@ -54,6 +44,18 @@
     &-icon {
       margin-left: 7px;
       margin-right: 7px;
+    }
+  }
+
+  @media (max-width: $breakpoint-lg) {
+    &_inner.mobileSlider {
+      aspect-ratio: 4 / 3;
+    }
+  }
+
+  @media (max-width: $breakpoint-s) {
+    &_inner.mobileSlider {
+      aspect-ratio: 1 / 1.4;
     }
   }
 }

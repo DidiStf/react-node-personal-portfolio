@@ -5,6 +5,10 @@
   align-items: flex-start;
   margin-right: 200px;
 
+  text {
+    user-select: none;
+  }
+
   @media (max-width: 1700px) {
     margin-right: 150px;
   }
@@ -15,9 +19,5 @@
 
   @media (max-width: 1450px) {
     margin-right: 50px;
-  }
-
-  & text {
-    user-select: none;
   }
 }

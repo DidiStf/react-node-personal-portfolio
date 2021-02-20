@@ -18,14 +18,14 @@
     transform: skew(-25deg) translateX(10%);
   }
 
-  @media (max-width: $breakpoint-lg) {
-    display: none;
-  }
-
   &_image {
     position: absolute;
     bottom: 0;
     max-height: 95%;
     margin-left: 3rem;
+  }
+
+  @media (max-width: $breakpoint-lg) {
+    display: none;
   }
 }
