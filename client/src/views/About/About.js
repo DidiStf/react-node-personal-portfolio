@@ -6,17 +6,15 @@ import { translate } from '../../utils/translate';
 
 import './About.scss';
 
-const AboutView = () => {
-  return (
-    <div className='AboutView'>
-      <ContentCard heading={translate('about.heading')}>
-        <>
-          <AboutInfo />
-          <AboutImage />
-        </>
-      </ContentCard>
-    </div>
-  );
-};
+const AboutView = () => (
+  <div className='AboutView'>
+    <ContentCard heading={translate('about.heading')}>
+      <>
+        <AboutInfo />
+        <AboutImage />
+      </>
+    </ContentCard>
+  </div>
+);
 
 export default AboutView;

@@ -1,10 +1,10 @@
-import axios from "axios";
+import axios from 'axios';
 
-const API_KEY = "api/contact";
+const API_KEY = 'api/contact';
 
 const config = {
   header: {
-    "Content-Type": "application/json",
+    'Content-Type': 'application/json',
   },
 };
 

@@ -9,23 +9,21 @@ import { TranslationLocaleProvider } from './context/TranslationLocaleProvider';
 
 import './App.scss';
 
-const App = () => {
-  return (
-    <div className='App'>
-      <TranslationLocaleProvider>
-        <TranslationProvider>
-          <NavbarMenuProvider>
-            <ProjectModalProvider>
-              <Router>
-                <Navbar />
-                <Routes />
-              </Router>
-            </ProjectModalProvider>
-          </NavbarMenuProvider>
-        </TranslationProvider>
-      </TranslationLocaleProvider>
-    </div>
-  );
-};
+const App = () => (
+  <div className='App'>
+    <TranslationLocaleProvider>
+      <TranslationProvider>
+        <NavbarMenuProvider>
+          <ProjectModalProvider>
+            <Router>
+              <Navbar />
+              <Routes />
+            </Router>
+          </ProjectModalProvider>
+        </NavbarMenuProvider>
+      </TranslationProvider>
+    </TranslationLocaleProvider>
+  </div>
+);
 
 export default App;

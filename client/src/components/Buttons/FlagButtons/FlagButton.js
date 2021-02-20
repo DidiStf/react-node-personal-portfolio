@@ -3,17 +3,15 @@ import PropTypes from 'prop-types';
 
 import './FlagButton.scss';
 
-const FlagButton = ({ active, alt, image, onClick }) => {
-  return (
-    <div className='FlagButton' onClick={onClick}>
-      <img
-        className={classnames('FlagButton_image', active && 'active')}
-        src={image}
-        alt={alt}
-      />
-    </div>
-  );
-};
+const FlagButton = ({ active, alt, image, onClick }) => (
+  <div className='FlagButton' onClick={onClick}>
+    <img
+      className={classnames('FlagButton_image', active && 'active')}
+      src={image}
+      alt={alt}
+    />
+  </div>
+);
 
 FlagButton.propTypes = {
   active: PropTypes.bool.isRequired,

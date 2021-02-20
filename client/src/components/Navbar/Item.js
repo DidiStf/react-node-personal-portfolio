@@ -4,20 +4,18 @@ import { Link } from 'react-router-dom';
 
 import './Item.scss';
 
-const NavbarItem = ({ children, className, onClick, path, ...props }) => {
-  return (
-    <li className='NavbarItem'>
-      <Link
-        className={classnames('NavbarItem_link', className)}
-        to={path}
-        onClick={onClick}
-        {...props}
-      >
-        {children}
-      </Link>
-    </li>
-  );
-};
+const NavbarItem = ({ children, className, onClick, path, ...props }) => (
+  <li className='NavbarItem'>
+    <Link
+      className={classnames('NavbarItem_link', className)}
+      to={path}
+      onClick={onClick}
+      {...props}
+    >
+      {children}
+    </Link>
+  </li>
+);
 
 NavbarItem.propTypes = {
   children: PropTypes.node.isRequired,

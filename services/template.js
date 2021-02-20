@@ -1,28 +1,24 @@
 exports.generateTemplate = (contactData) => {
-    const {name, email, subject, message} = contactData;
+  const { name, email, subject, message } = contactData;
 
-    const table = 
-        `border-collapse: collapse;
+  const table = `border-collapse: collapse;
         font-size: 1rem;
         font-weight: bold;
         min-width: 400px;`;
 
-    const theadTr = 
-        `background-color: #f5497d;
+  const theadTr = `background-color: #f5497d;
         color: #ffffff;`;
-    
-    const thTd = 
-        `padding: 12px 15px;
+
+  const thTd = `padding: 12px 15px;
         border: 2px solid #f5497d;`;
 
-    const tbodyTr = 
-        `text-align: center;
+  const tbodyTr = `text-align: center;
         background-color: #132c3a;
         color: #ffffff;`;
 
-    const activeRow = `border-bottom: 5px solid #f5497d;`
+  const activeRow = `border-bottom: 5px solid #f5497d;`;
 
-    const template = `<table style="${table}">
+  const template = `<table style="${table}">
     <thead>
         <tr style="${theadTr}">
             <th style="${thTd}">Message from</th>
@@ -43,7 +39,7 @@ exports.generateTemplate = (contactData) => {
             <td style="${thTd}${activeRow}">${message}</td>
         </tr>
     </tbody>
-</table>`
+</table>`;
 
-return template;
-}
+  return template;
+};

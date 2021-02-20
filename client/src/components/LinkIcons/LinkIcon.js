@@ -3,18 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import './LinkIcon.scss';
 
-const LinkIcon = ({ icon, iconSize, link }) => {
-  return (
-    <a
-      className='LinkIcon'
-      href={link}
-      rel='noreferrer noopener'
-      target='_blank'
-    >
-      <FontAwesomeIcon icon={icon} className='LinkIcon_icon' size={iconSize} />
-    </a>
-  );
-};
+const LinkIcon = ({ icon, iconSize, link }) => (
+  <a className='LinkIcon' href={link} rel='noreferrer noopener' target='_blank'>
+    <FontAwesomeIcon icon={icon} className='LinkIcon_icon' size={iconSize} />
+  </a>
+);
 
 LinkIcon.propTypes = {
   icon: PropTypes.object.isRequired,

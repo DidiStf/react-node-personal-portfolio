@@ -3,13 +3,11 @@ import PropTypes from 'prop-types';
 
 import './PrimaryButton.scss';
 
-const PrimaryButton = ({ children, className, onClick }) => {
-  return (
-    <div className={classnames('PrimaryButton', className)} onClick={onClick}>
-      {children}
-    </div>
-  );
-};
+const PrimaryButton = ({ children, className, onClick }) => (
+  <div className={classnames('PrimaryButton', className)} onClick={onClick}>
+    {children}
+  </div>
+);
 
 PrimaryButton.propTypes = {
   children: PropTypes.node.isRequired,
