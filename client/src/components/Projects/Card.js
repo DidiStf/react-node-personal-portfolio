@@ -61,14 +61,14 @@ const ProjectCard = ({ project }) => {
           </p>
         </div>
         <div className='ProjectCard_actions'>
-          {isMobileApp ? (
-            <PrimaryButton onClick={() => toggleModalAction(project)}>
-              {translate('projects.seeMoreBtn')}
-            </PrimaryButton>
-          ) : (
+          {url ? (
             <PrimaryExternalLink link={url}>
               {translate('projects.visitSiteBtn')}
             </PrimaryExternalLink>
+          ) : (
+            <PrimaryButton onClick={() => toggleModalAction(project)}>
+              {translate('projects.seeMoreBtn')}
+            </PrimaryButton>
           )}
           {isDesignPrototype ? (
             <PrimaryExternalLink link={demo}>

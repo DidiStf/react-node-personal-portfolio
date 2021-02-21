@@ -4,10 +4,11 @@
   @include center-content;
   height: 100%;
   background: $primary-color;
-  padding-top: 74.59px;
+  padding-top: 75px;
 
-  & .ContentCard {
+  & .ContentCard_content {
     max-width: 1200px;
+    margin: auto;
   }
 
   @media (max-width: $breakpoint-xl) {

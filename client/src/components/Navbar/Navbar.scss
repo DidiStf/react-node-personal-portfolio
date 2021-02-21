@@ -3,7 +3,31 @@
 .Navbar {
   width: 100%;
   display: flex;
+  justify-content: space-between;
   background-color: $darker-color;
   position: fixed;
   z-index: 500;
+
+  .NavbarMenuToggler {
+    position: relative;
+  }
+
+  &_logo {
+    height: 80px;
+    width: 80px;
+    margin: 0 5px;
+  }
+
+  @media (max-width: $breakpoint-lg) {
+    .TerminalAnimation {
+      display: none;
+    }
+  }
+
+  @media (max-width: $breakpoint-xxs) {
+    &_logo {
+      height: 65px;
+      width: 65px;
+    }
+  }
 }
