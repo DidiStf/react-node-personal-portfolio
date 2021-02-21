@@ -7,7 +7,7 @@ import './Navbar.scss';
 const Navbar = () => (
   <>
     <div className='Navbar'>
-      <TerminalAnimation />
+      <TerminalAnimation path='/' />
       <NavbarMenuToggler />
     </div>
     <NavbarMenu />
