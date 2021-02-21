@@ -24,10 +24,10 @@ const en = {
         "I'm passionate about programming and languages. I love creating aesthetic web and mobile applications and my goal is to write clean, well-structured code and to improve myself constantly.",
       info2:
         "I speak French, Spanish, English and Bulgarian fluently. I have a Master's degree with honours in",
-      mastersDegree: 'Hispanic and Latin American Studies ',
+      mastersDegree: '"Hispanic and Latin American Studies" ',
       info3: "and a Bachelor's level professional degree in",
       bachelorsDegree:
-        'Full-Stack Web and Mobile Application Development and Design.',
+        '"Full-Stack Web and Mobile Application Development and Design".',
       info4:
         "I mainly run on code and good coffee. I'm highly motivated and passionate about learning new skills and best practices. I also like keeping me up to date with the latest technologies and trying them by building different projects.",
       interestsHeading: 'Interests: ',

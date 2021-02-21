@@ -21,7 +21,7 @@ const es = {
       presentation:
         '¡Hola! Me llamo Dilyana y soy desarrolladora web full-stack, basada en Niza, Francia.',
       info1:
-        'Me apasionan la programación y las lenguas. Me gusta crear aplicaciones (web y móviles) estéticas y mi objetivo es escribir un código bien estructurado y de calidad y mejorarme continuamente.',
+        'Me apasionan la programación y las lenguas. Me gusta crear aplicaciones web y móviles estéticas y mi objetivo es escribir un código bien estructurado y de calidad y mejorarme continuamente.',
       info2:
         'Soy bilingüe en francés, español, inglés y búlgaro. Tengo un Master en ',
       mastersDegree: '"Estudios Hispánicos et Hispano-Americanos" ',
