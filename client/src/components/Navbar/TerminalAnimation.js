@@ -1,21 +1,10 @@
-import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
-
 import './TerminalAnimation.scss';
 
-const TerminalAnimation = ({ path }) => (
-  <Link className='TerminalAnimation' to={path}>
+const TerminalAnimation = () => (
+  <div className='TerminalAnimation'>
     didistf@xmg-fusion: ~$
     <div className='TerminalAnimation_cursor'> </div>
-  </Link>
+  </div>
 );
-
-TerminalAnimation.propTypes = {
-  path: PropTypes.string,
-};
-
-TerminalAnimation.defaultProps = {
-  path: '',
-};
 
 export default TerminalAnimation;
