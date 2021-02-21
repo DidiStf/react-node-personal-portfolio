@@ -6,6 +6,7 @@
   box-shadow: 0 0 15px transparentize($accent-color, 0.7);
   min-width: 350px;
   margin: 20px;
+  user-select: none;
 
   &_image-container {
     aspect-ratio: 16 / 9;
