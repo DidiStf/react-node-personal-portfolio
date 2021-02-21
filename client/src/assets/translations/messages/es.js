@@ -9,7 +9,7 @@ const es = {
       projects: 'Proyectos',
       experience: 'Experiencia',
       contact: 'Contacto',
-      resume: 'Currículum',
+      resume: 'CV',
     },
     home: {
       presentation: '¡Hola! Me llamo ',
@@ -31,7 +31,7 @@ const es = {
         'Corro principalmente con código y buen café. Soy motivada y me gusta adquirir nuevas habilidades, adoptar buenas prácticas, mantenerme al día con las últimas tecnologías y ponerlas en práctica desarrollando diferentes proyectos.',
       interestsHeading: 'Intereses : ',
       info5:
-        'videojuegos, retro gaming, juegos de mesa, electrónica, lenguas y nuevas tecnologías. Bueno, soy una geek.',
+        'videojuegos, retro gaming, juegos de mesa, electrónica, lenguas y nuevas tecnologías. Bueno, soy una "geek".',
     },
     skills: {
       heading: 'Habilidades',
