@@ -7,7 +7,15 @@ import {
 import './Item.scss';
 
 const TimelineItem = ({ data }) => {
-  const { date, description, institution, location, tag, title } = data;
+  const {
+    date,
+    description,
+    institution,
+    location,
+    studies,
+    tag,
+    title,
+  } = data;
 
   return (
     <div className='TimelineItem'>
@@ -21,7 +29,7 @@ const TimelineItem = ({ data }) => {
         <span className='TimelineItem_content_circle'>
           <FontAwesomeIcon
             className='TimelineItem_content_circle_icon'
-            icon={tag === 'education' ? faGraduationCap : faBriefcase}
+            icon={studies === true ? faGraduationCap : faBriefcase}
           />
         </span>
       </div>
