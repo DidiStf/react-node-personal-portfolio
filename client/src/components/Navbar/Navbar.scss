@@ -12,4 +12,10 @@
     position: relative;
     visibility: hidden;
   }
+
+  @media (max-width: $breakpoint-lg) {
+    .TerminalAnimation {
+      display: none;
+    }
+  }
 }
