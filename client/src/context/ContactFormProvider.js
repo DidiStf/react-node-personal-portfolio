@@ -65,7 +65,7 @@ export const ContactFormProvider = ({ children }) => {
         type: SET_CONTACT_SUCCESS,
       });
     } catch (error) {
-      console.error('error:', error.response.data.message);
+      console.error('error:', error);
       dispatch({
         type: SET_CONTACT_ERROR,
       });

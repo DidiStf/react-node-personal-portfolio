@@ -5,7 +5,6 @@
   position: relative;
   height: 100%;
   width: 100%;
-  aspect-ratio: 16 / 9;
   user-select: none;
 
   &_arrow {
@@ -26,12 +25,13 @@
   }
 
   &_image {
-    width: 100%;
+    width: auto;
     height: 100%;
     border-radius: 10px;
 
     &.mobile {
       width: auto;
+      transform: translateX(-50%);
     }
   }
 

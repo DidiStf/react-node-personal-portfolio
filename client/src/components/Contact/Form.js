@@ -151,6 +151,7 @@ const ContactForm = () => {
         </div>
         <div className='ContactForm_form_input-box submit'>
           <button
+            type='button'
             className='ContactForm_form_button'
             disabled={loading}
             onClick={handleSubmit}

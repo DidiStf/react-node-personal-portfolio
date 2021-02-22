@@ -6,6 +6,8 @@ import {
   faChevronCircleRight,
 } from '@fortawesome/free-solid-svg-icons';
 
+import RatioContainer from '../RatioContainer/RatioContainer';
+
 import './Slider.scss';
 
 const ImageSlider = ({ project }) => {
@@ -39,26 +41,51 @@ const ImageSlider = ({ project }) => {
             />
           </>
         )}
-        {images.map((image, i) => (
-          <div
-            className={classnames(
-              'ImageSlider_slide',
-              i === current && 'active'
-            )}
-            key={i}
-          >
-            {i === current && (
-              <img
+        {isMobileApp ? (
+          <RatioContainer>
+            {images.map((image, i) => (
+              <div
                 className={classnames(
-                  'ImageSlider_image',
-                  isMobileApp && 'mobile'
+                  'ImageSlider_slide',
+                  i === current && 'active'
                 )}
-                src={image}
-                alt={`${name} screenshot`}
-              />
-            )}
-          </div>
-        ))}
+                key={i}
+              >
+                {i === current && (
+                  <img
+                    className={classnames(
+                      'ImageSlider_image',
+                      isMobileApp && 'mobile'
+                    )}
+                    src={image}
+                    alt={`${name} screenshot`}
+                  />
+                )}
+              </div>
+            ))}
+          </RatioContainer>
+        ) : (
+          images.map((image, i) => (
+            <div
+              className={classnames(
+                'ImageSlider_slide',
+                i === current && 'active'
+              )}
+              key={i}
+            >
+              {i === current && (
+                <img
+                  className={classnames(
+                    'ImageSlider_image',
+                    isMobileApp && 'mobile'
+                  )}
+                  src={image}
+                  alt={`${name} screenshot`}
+                />
+              )}
+            </div>
+          ))
+        )}
       </div>
     )
   );

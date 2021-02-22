@@ -14,6 +14,7 @@ const verifyMailerStatus = async () =>
   await contactEmail().verify((error) => {
     if (error) {
       console.log(error);
+      throw error;
     } else {
       console.log('Ready to Send');
     }

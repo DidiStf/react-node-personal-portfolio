@@ -8,7 +8,7 @@
   /* Scrollbar */
   /* width */
   ::-webkit-scrollbar {
-    width: 8px;
+    width: 6px;
 
     /* Track */
     &-track {
@@ -25,6 +25,9 @@
       }
     }
   }
+
+  scrollbar-color: $secondary-color $darker-color; /* thumb and track color */
+  scrollbar-width: thin;
 }
 
 body {
