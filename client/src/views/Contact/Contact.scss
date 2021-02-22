@@ -2,6 +2,13 @@
 
 .ContactView {
   @include center-content;
-  min-height: 100%;
+  height: 100%;
+  background: $primary-color;
   padding-top: 75px;
+  overflow: hidden;
+
+  .ContactCard {
+    margin: auto;
+    margin-bottom: 80px;
+  }
 }
