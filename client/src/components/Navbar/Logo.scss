@@ -1,16 +1,24 @@
 @import '../../styles/constants';
 
 .NavbarLogo {
+  margin-left: 5px;
+  height: 70px;
+  width: 70px;
+
   &_image {
-    height: 80px;
-    width: 80px;
-    margin: 0 5px;
+    height: 100%;
+    width: 100%;
+    margin-top: 3px;
+  }
+
+  @media (max-width: $breakpoint-lg) {
+    &_image {
+      margin-top: 0;
+    }
   }
 
   @media (max-width: $breakpoint-xxs) {
-    &_image {
-      height: 65px;
-      width: 65px;
-    }
+    height: 60px;
+    width: 60px;
   }
 }
