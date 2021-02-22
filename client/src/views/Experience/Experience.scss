@@ -6,10 +6,4 @@
   background: $primary-color;
   padding-top: 75px;
   overflow: hidden;
-
-  @media (max-width: $breakpoint-xs) {
-    .ContentCard {
-      padding: 0;
-    }
-  }
 }
