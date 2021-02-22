@@ -12,8 +12,12 @@ const ContentCard = ({ heading, children }) => (
 );
 
 ContentCard.propTypes = {
-  heading: PropTypes.node.isRequired,
+  heading: PropTypes.node,
   children: PropTypes.node.isRequired,
+};
+
+ContentCard.defaultProps = {
+  heading: '',
 };
 
 export default ContentCard;
