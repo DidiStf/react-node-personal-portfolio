@@ -3,6 +3,7 @@ import { useContext } from 'react';
 
 import PrimaryButton from '../Buttons/PrimaryButton';
 import PrimaryExternalLink from '../Buttons/PrimaryExternalLink';
+import RatioContainer from '../RatioContainer/RatioContainer';
 
 import { ProjectModalContext } from '../../context/ProjectModalProvider';
 import { TranslationLocaleContext } from '../../context/TranslationLocaleProvider';
@@ -33,13 +34,18 @@ const ProjectCard = ({ project }) => {
         className='ProjectCard_image-container'
         onClick={() => toggleModalAction(project)}
       >
-        {images?.length && (
-          <img
-            className={classnames('ProjectCard_image', isMobileApp && 'mobile')}
-            src={images[0]}
-            alt='screenshot'
-          />
-        )}
+        <RatioContainer>
+          {images?.length && (
+            <img
+              className={classnames(
+                'ProjectCard_image',
+                isMobileApp && 'mobile'
+              )}
+              src={images[0]}
+              alt='screenshot'
+            />
+          )}
+        </RatioContainer>
       </div>
       <div className='ProjectCard_bottom'>
         <div className='ProjectCard_details'>

@@ -9,21 +9,15 @@
   user-select: none;
 
   &_image-container {
-    aspect-ratio: 16 / 9;
     background-color: transparentize(black, 0.7);
     border-radius: 10px 10px 0 0;
     cursor: pointer;
   }
 
   &_image {
-    height: 100%;
-    width: 100%;
-    display: block;
     border-radius: 10px 10px 0 0;
 
     &.mobile {
-      width: auto;
-      margin: auto;
       border-radius: 0;
     }
   }
