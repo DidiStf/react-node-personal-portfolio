@@ -19,7 +19,7 @@ export const gameMazeApi = {
     [LOCALES.FRENCH]:
       "API REST que j'ai développée pour un de mes projets de fin d'études, portant le nom Game Maze. Elle donne accès à des informations détaillées sur plusieurs jeux vidéo. Elle contient également d'autres informations comme les comentaires des utilisateurs, les notes qu'ils ont attribuées et leurs messages et serve de back-end pour le projet d'application mobile Game Maze.",
     [LOCALES.SPANISH]:
-      'API REST que he desarrollado para uno de mis proyectos de fin de carrera, llamado Game Maze. Ella da acceso a una información detallada sobre varios videojuegos. También contiene otros datos como los comentarios de los usuarios, las notas que esos últimos han dado y sus mensajes et sirve de back-end para el proyecto de aplicación móvil Game Maze.',
+      'API REST que he desarrollado para uno de mis proyectos de fin de curso, llamado Game Maze. Ella da acceso a una información detallada sobre varios videojuegos. También contiene otros datos como los comentarios de los usuarios, las notas que esos últimos han dado y sus mensajes et sirve de back-end para el proyecto de aplicación móvil Game Maze.',
     [LOCALES.BULGARIAN]:
       'REST уеб приложение (API), което разработих за един от дипломните ми проекти, наречен Game Maze. То дава достъп до детайлна информация за различни видеоигри. Също така, съдържа и данни като потребителските коментари, оценките които те са дали и съобщенията им и служи за back-end за проекта за мобилна апликация Game Maze.',
   },

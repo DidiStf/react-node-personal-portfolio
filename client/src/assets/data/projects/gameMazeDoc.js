@@ -19,7 +19,7 @@ export const gameMazeDoc = {
     [LOCALES.FRENCH]:
       'Documentation détaillée pour l\'API REST Game Maze, élaborée pour un de mes projets de fin d\'études. Elle contient toutes les informations nécessaires pour l\'utilisation de l\'API Game Maze, comme les "endpoints", les requêtes HTTP disponibles, les "headings", les paramettres, les réponses, les erreurs et les permissions.',
     [LOCALES.SPANISH]:
-      'Documentación detallada para la API REST Game Maze, hecha como parte de uno de mis proyectos de fin de carrera. Ella ofrece todo tipo de información necesaria para el uso de la API Game Maze, como los "endpoints", las peticiones HTTP disponibles, las cabeceras (headers), los parámetros, las respuestas, los errores y las permisiones.',
+      'Documentación detallada para la API REST Game Maze, hecha como parte de uno de mis proyectos de fin de curso. Ella ofrece todo tipo de información necesaria para el uso de la API Game Maze, como los "endpoints", las peticiones HTTP disponibles, las cabeceras (headers), los parámetros, las respuestas, los errores y las permisiones.',
     [LOCALES.BULGARIAN]:
       'Подробна докумнетация за REST уеб апликацията (API) Game Maze, изготвена като част от дипломните ми проекти. Тя съдържа цялата информация необходима за използването на back-end приложението (ендпойнтс, HTTP заявки, параметри, отговори, грешки, разрешения и т.н.)',
   },
