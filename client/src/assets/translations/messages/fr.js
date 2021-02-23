@@ -21,9 +21,9 @@ const fr = {
       presentation:
         "Bonjour ! Je m'appelle Dilyana et je suis développeuse web full-stack, basée sur Nice, France.",
       info1:
-        "Je suis passionnée par la programmation et les langues. J'aime créer des applications web et mobiles esthétiques et j'ai pour objectif d'écrire du code bien structuré et de qualité, ainsi que de m'améliorer en permanence.",
+        "Je suis passionnée par la programmation et les langues. J'aime créer des applications web et mobiles esthétiques et j'ai pour objectif d'écrire un code bien structuré et de qualité, ainsi que de m'améliorer en permanence.",
       info2:
-        "Je suis bilingue en français, espagnol, anglais et bulgare. Je suis diplômée d'un Master en",
+        "Je parle courament français, espagnol, anglais et bulgare. Je suis diplômée d'un Master en",
       mastersDegree: '"Études Hspaniques et Hispano-Américaines" ',
       info3: "et j'ai un Titre Professionnel de ",
       bachelorsDegree: '"Concepteur Développeur d\'Application."',
