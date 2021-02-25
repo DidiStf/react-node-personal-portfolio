@@ -1,4 +1,4 @@
-import image from '../../assets/images/img-about.png';
+import image from '../../assets/images/img-about.jpg';
 
 import './Image.scss';
 
