@@ -1,4 +1,4 @@
-import image from '../../assets/images/img-contact.png';
+import image from '../../assets/images/img-contact.webp';
 
 import './Image.scss';
 
