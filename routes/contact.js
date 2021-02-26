@@ -33,13 +33,16 @@ router.post(
 
     const { email, name, subject, message } = req.body;
 
-    try {
-      await contactService.sendContactEmail({ name, email, subject, message });
-      res.json({ status: 'Email Sent' });
-    } catch (error) {
-      console.error(error.message);
-      res.status(500).json({ message: 'Server Error' });
-    }
+    contactService
+      .sendContactEmail({ name, email, subject, message })
+      .then((result) => {
+        console.log('Email Sent!', result);
+        res.json({ status: 'Email Sent' });
+      })
+      .catch((error) => {
+        console.log('Error', error.message);
+        res.status(500).json({ message: 'Server Error' });
+      });
   }
 );
 

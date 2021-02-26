@@ -1,50 +1,51 @@
+const { google } = require('googleapis');
 const nodemailer = require('nodemailer');
 const templateService = require('./template');
 
-const contactEmail = () =>
-  nodemailer.createTransport({
-    service: 'gmail',
-    auth: {
-      user: process.env.EMAIL,
-      pass: process.env.EMAIL_PASSWORD,
-    },
-  });
-
-const verifyMailerStatus = async () =>
-  await contactEmail().verify((error) => {
-    if (error) {
-      console.log(error);
-      throw error;
-    } else {
-      console.log('Ready to Send');
-    }
-  });
-
-const formatEmail = (contactData) => {
-  const hostEmail = process.env.EMAIL;
-  const template = templateService.generateTemplate(contactData);
-
-  const mail = {
-    from: contactData.name,
-    to: hostEmail,
-    subject: 'Contact Form Submit',
-    html: template,
-  };
-
-  return mail;
-};
-
 exports.sendContactEmail = async (contactData) => {
+  const CLIENT_ID = process.env.CLIENT_ID;
+  const CLIENT_SECRET = process.env.CLIENT_SECRET;
+  const EMAIL = process.env.EMAIL;
+  const REDIRECT_URI = process.env.REDIRECT_URI;
+  const REFRESH_TOKEN = process.env.REFRESH_TOKEN;
+
+  const oAuth2Client = new google.auth.OAuth2(
+    CLIENT_ID,
+    CLIENT_SECRET,
+    REDIRECT_URI
+  );
+
+  oAuth2Client.setCredentials({ refresh_token: REFRESH_TOKEN });
+
+  const { email, message, name, subject } = contactData;
+  const html = templateService.generateTemplate(contactData);
+
   try {
-    await verifyMailerStatus();
-    const mail = formatEmail(contactData);
-    await contactEmail().sendMail(mail, (error) => {
-      if (error) throw error;
-      console.log('Email Sent');
-      return;
+    const accessToken = await oAuth2Client.getAccessToken();
+
+    const transport = nodemailer.createTransport({
+      service: 'gmail',
+      auth: {
+        type: 'OAuth2',
+        user: EMAIL,
+        clientId: CLIENT_ID,
+        clientSecret: CLIENT_SECRET,
+        refreshToken: REFRESH_TOKEN,
+        accessToken,
+      },
     });
+
+    const mailOptions = {
+      from: `${name} <${email}>`,
+      to: EMAIL,
+      subject,
+      text: message,
+      html,
+    };
+
+    const result = await transport.sendMail(mailOptions);
+    return result;
   } catch (error) {
     throw error;
   }
-  return;
 };
