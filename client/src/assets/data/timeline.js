@@ -73,8 +73,7 @@ const data = {
     {
       institution: 'Sofia University "St. Kliment Ohridski"',
       location: 'Sofia, Bulgaria',
-      title:
-        "Bachelor's degree in Spanish and Iberian Studies and Linguistics (Bac+4)",
+      title: "Bachelor's degree in Hispanic and Latin American Studies (Bac+4)",
       description: 'Spanish Translation and Teaching',
       date: 'October 2011 - September 2015',
       tag: 'education',
@@ -83,7 +82,7 @@ const data = {
     {
       institution: 'University of Valencia',
       location: 'Valencia, Spain',
-      title: 'Spanish and Iberian Studies and Linguistics',
+      title: 'Hispanic and Latin American Studies',
       description: 'Spanish Linguistics (Erasmus)',
       date: 'September 2013 - June 2014',
       tag: 'education',
@@ -153,7 +152,7 @@ const data = {
       location: 'Sofia, Bulgarie',
       title: 'Spécialiste en Support Technique',
       description:
-        "Spécialiste en Support Technique pour l'entreprise Américaine Fitbit. Support en espagnol, anglais et français par téléphone, par email et sur les réseaux sociaux. ",
+        "Spécialiste en Support Technique pour l'entreprise Américaine Fitbit. Support en espagnol, anglais et français par téléphone, par email et sur les réseaux sociaux.",
       date: 'Septembre 2015 - Août 2016',
       tag: 'emploi',
       studies: false,
@@ -161,7 +160,7 @@ const data = {
     {
       institution: 'Université de Sofia "St. Kliment Ohridski"',
       location: 'Sofia, Bulgarie',
-      title: 'Licence en Lettres Hispaniques et Hispano-Américaines (Bac+4)',
+      title: 'Licence en Études Hispaniques et Hispano-Américaines (Bac+4)',
       description:
         "Diplôme de traducteur et professeur d'espagnol (Obtenu avec les félicitations du jury).",
       date: 'Octobre 2011 - Septembre 2015',
@@ -171,7 +170,7 @@ const data = {
     {
       institution: 'Université de Valence',
       location: 'Valence, Espagne',
-      title: 'Lettres Hispaniques et Hispano-Américaines',
+      title: 'Études Hispaniques et Hispano-Américaines',
       description: 'Erasmus',
       date: 'Septembre 2013 - Juin 2014',
       tag: 'education',
@@ -184,7 +183,7 @@ const data = {
       location: 'Niza, Francia',
       title: 'Desarrolladora Web JavaScript Full-Stack',
       description:
-        'Participé en la construcciòn y el desarrollo de una plataforma web de streaming de vídeo, VOD y comunicación por vídeo en tiempo real. (React, Node.js, Express.js, MongoDB, Redux, WebRTC, WebSockets)',
+        'Participé en el diseño y el desarrollo de una plataforma web de streaming de vídeo, VOD y comunicación por vídeo en tiempo real. (React, Node.js, Express.js, MongoDB, Redux, WebRTC, WebSockets)',
       date: 'Dicicembre 2019 - Diciembre 2020',
       tag: 'empleo',
       studies: false,
@@ -203,7 +202,7 @@ const data = {
       location: 'Sophia Antipolis, Francia',
       title: 'Desarrolladora Web Front-End',
       description:
-        'Participé en la contrucción de la Interfaz Usuario de una plataforma web que une Inteligencia Artificial y Psicología con el fin de evaluar y mejorar el rendimiento de las empresas a través del compromiso de sus collaboradores. (Vue.js, Element UI, JavaScript, CSS/Sass, Bootstrap, HTML)',
+        'Participé en el desarrollo de la Interfaz Usuario de una plataforma web que une Inteligencia Artificial y Psicología con el fin de evaluar y mejorar el rendimiento de las empresas a través del compromiso de sus collaboradores. (Vue.js, Element UI, JavaScript, CSS/Sass, Bootstrap, HTML)',
       date: 'Junio 2019 - Julio 2020',
       tag: 'empleo',
       studies: false,
@@ -212,7 +211,7 @@ const data = {
       institution: 'Instituto del Comercio y de los Servicios (ICS)',
       location: 'Niza, Francia',
       title: 'Dessarollo Web y Móvil',
-      description: 'Título Profesional',
+      description: 'Título Profesional (BAC+2)',
       date: 'Marzo 2019 - Octubre 2019',
       tag: 'educación',
       studies: true,
