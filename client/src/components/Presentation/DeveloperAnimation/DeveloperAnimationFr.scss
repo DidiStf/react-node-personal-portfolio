@@ -2,7 +2,7 @@
 
 .DeveloperAnimationFr {
   margin-left: 0.7rem;
-  margin-bottom: -1.1rem;
+  margin-bottom: -1rem;
 
   #developerFr {
     width: 280px;
@@ -83,84 +83,66 @@
   }
 
   #developerFr path:nth-child(13) {
-    stroke-dasharray: $letter-w-fr;
-    stroke-dashoffset: $letter-w-fr;
-    animation: appear 2.5s ease forwards 0.5s;
-  }
-
-  #developerFr path:nth-child(14) {
-    stroke-dasharray: $letter-e-fr;
-    stroke-dashoffset: $letter-e-fr;
-    animation: appear 2.5s ease forwards 0.5s;
-  }
-
-  #developerFr path:nth-child(15) {
-    stroke-dasharray: $letter-b-fr;
-    stroke-dashoffset: $letter-b-fr;
-    animation: appear 2.5s ease forwards 0.5s;
-  }
-
-  #developerFr path:nth-child(16) {
     stroke-dasharray: $letter-f-fr;
     stroke-dashoffset: $letter-f-fr;
     animation: appear 2.5s ease forwards 0.5s;
   }
 
-  #developerFr path:nth-child(17) {
+  #developerFr path:nth-child(14) {
     stroke-dasharray: $letter-u-fr;
     stroke-dashoffset: $letter-u-fr;
     animation: appear 2.5s ease forwards 0.5s;
   }
 
-  #developerFr path:nth-child(18) {
+  #developerFr path:nth-child(15) {
     stroke-dasharray: $letter-l-fr;
     stroke-dashoffset: $letter-l-fr;
     animation: appear 2.5s ease forwards 0.5s;
   }
 
-  #developerFr path:nth-child(19) {
+  #developerFr path:nth-child(16) {
     stroke-dasharray: $letter-l-fr;
     stroke-dashoffset: $letter-l-fr;
     animation: appear 2.5s ease forwards 0.5s;
   }
 
-  #developerFr path:nth-child(20) {
+  #developerFr path:nth-child(17) {
     stroke-dasharray: $dash-fr;
     stroke-dashoffset: $dash-fr;
     animation: appear 2.5s ease forwards 0.5s;
   }
 
-  #developerFr path:nth-child(21) {
+  #developerFr path:nth-child(18) {
     stroke-dasharray: $letter-s-fr;
     stroke-dashoffset: $letter-s-fr;
     animation: appear 2.5s ease forwards 0.5s;
   }
 
-  #developerFr path:nth-child(22) {
+  #developerFr path:nth-child(19) {
     stroke-dasharray: $letter-t-fr;
     stroke-dashoffset: $letter-t-fr;
     animation: appear 2.5s ease forwards 0.5s;
   }
 
-  #developerFr path:nth-child(23) {
+  #developerFr path:nth-child(20) {
     stroke-dasharray: $letter-a-fr;
     stroke-dashoffset: $letter-a-fr;
     animation: appear 2.5s ease forwards 0.5s;
   }
 
-  #developerFr path:nth-child(24) {
+  #developerFr path:nth-child(21) {
     stroke-dasharray: $letter-c-fr;
     stroke-dashoffset: $letter-c-fr;
     animation: appear 2.5s ease forwards 0.5s;
   }
 
-  #developerFr path:nth-child(25) {
+  #developerFr path:nth-child(22) {
     stroke-dasharray: $letter-k-fr;
     stroke-dashoffset: $letter-k-fr;
     animation: appear 2.5s ease forwards 0.5s;
   }
 
-  #developerFr path:nth-child(26) {
+  #developerFr path:nth-child(23) {
     stroke-dasharray: $dot-fr-dev;
     stroke-dashoffset: $dot-fr-dev;
     animation: appear 2.5s ease forwards 0.5s;
@@ -172,19 +154,17 @@
     }
   }
 
-  @media (min-width: $breakpoint-md) {
-    margin-bottom: -1;
-  }
-
   @media (min-width: $breakpoint-lg) {
+    margin-bottom: -1.1rem;
     #developerFr {
       width: 500px;
     }
   }
 
   @media (min-width: $breakpoint-xl) {
+    margin-bottom: -1.4rem;
     #developerFr {
-      width: 646px;
+      width: 550px;
     }
   }
 }
