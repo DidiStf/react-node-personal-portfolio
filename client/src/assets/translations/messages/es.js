@@ -19,7 +19,7 @@ const es = {
     about: {
       heading: 'Sobre mí',
       presentation:
-        '¡Hola! Me llamo Dilyana y soy desarrolladora web full-stack, basada en Niza, Francia.',
+        '¡Hola! Me llamo Dilyana y soy desarrolladora full-stack, basada en Niza, Francia.',
       info1:
         'Me apasionan la programación y las lenguas. Me gusta crear aplicaciones web y móviles estéticas y mi objetivo es escribir un código bien estructurado y de calidad y mejorar continuamente.',
       info2:

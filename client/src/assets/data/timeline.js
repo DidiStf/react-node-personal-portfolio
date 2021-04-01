@@ -6,7 +6,7 @@ const data = {
     {
       institution: '53JS',
       location: 'Nice, France',
-      title: 'Full-Stack JavaScript Web Developer',
+      title: 'Full-Stack JavaScript Developer',
       description:
         'I worked on a web platform offering videos on streaming, VOD and real-time video and chat communication. (React, Node.js, Express.js, MongoDB, Redux, WebRTC, WebSockets)',
       date: 'December 2019 - December 2020',
@@ -25,7 +25,7 @@ const data = {
     {
       institution: 'Rheveo',
       location: 'Sophia Antipolis, France',
-      title: 'Front-End Web Developer',
+      title: 'Front-End Developer',
       description:
         "I took part in the development of the UI of a web platform that uses Artificial Intelligence and Psychology to improve the performance of the organizations through their collaborators' engagement. (Vue.js, Element UI, JavaScript, CSS/Sass, Bootstrap, HTML)",
       date: 'June 2019 - July 2020',
@@ -93,7 +93,7 @@ const data = {
     {
       institution: '53JS',
       location: 'Nice, France',
-      title: 'Développeuse Web Javascript Full-Stack',
+      title: 'Développeuse Javascript Full-Stack',
       description:
         "J'ai participé au développement d'une plateforme de streaming vidéo, de VOD et de communication vidéo en temps réel. (React, Node.js, Express.js, MongoDB, Redux, WebRTC, WebSockets)",
       date: 'Décembre 2019 - Décembre 2020',
@@ -112,7 +112,7 @@ const data = {
     {
       institution: 'Rheveo',
       location: 'Sophia Antipolis, France',
-      title: 'Développeuse Web Front-End',
+      title: 'Développeuse Front-End',
       description:
         "J'ai participé au développement de l'Interface Utilisateur d'une plateforme web qui réunit Intelligence Artificielle et Psychologie, afin d'evaluer et d'améliorer la performance des entreprises à travers l'engagement de leurs collaborateurs. (Vue.js, Element UI, JavaScript, CSS/Sass, Bootstrap, HTML)",
       date: 'Juin 2019 - Juillet 2020',
@@ -181,7 +181,7 @@ const data = {
     {
       institution: '53JS',
       location: 'Niza, Francia',
-      title: 'Desarrolladora Web JavaScript Full-Stack',
+      title: 'Desarrolladora JavaScript Full-Stack',
       description:
         'Participé en el diseño y el desarrollo de una plataforma web de streaming de vídeo, VOD y comunicación por vídeo en tiempo real. (React, Node.js, Express.js, MongoDB, Redux, WebRTC, WebSockets)',
       date: 'Dicicembre 2019 - Diciembre 2020',
@@ -200,7 +200,7 @@ const data = {
     {
       institution: 'Rheveo',
       location: 'Sophia Antipolis, Francia',
-      title: 'Desarrolladora Web Front-End',
+      title: 'Desarrolladora Front-End',
       description:
         'Participé en el desarrollo de la Interfaz Usuario de una plataforma web que une Inteligencia Artificial y Psicología con el fin de evaluar y mejorar el rendimiento de las empresas a través del compromiso de sus colaboradores. (Vue.js, Element UI, JavaScript, CSS/Sass, Bootstrap, HTML)',
       date: 'Junio 2019 - Julio 2020',
@@ -268,7 +268,7 @@ const data = {
     {
       institution: '53JS',
       location: 'Ница, Франция',
-      title: 'Full-Stack JavaScript Уеб Разработчик',
+      title: 'Full-Stack JavaScript Разработчик',
       description:
         'Участвах в разработването на уеб платформа за видео стрийминг, видео споделяне и видео комуникация в реално време. (React, Node.js, Express.js, MongoDB, Redux, WebRTC, WebSockets)',
       date: 'Декември 2019 - Декември 2020',
@@ -287,7 +287,7 @@ const data = {
     {
       institution: 'Rheveo',
       location: 'Софиа-Антиполис, Франция',
-      title: 'Front-End Уеб Разработчик',
+      title: 'Front-End Разработчик',
       description:
         'Участвах в разработването на потребителски интерфейс за уеб платформа, която съчетава Изкуствен Интелект и Психология с цел оценка и подобряване на производителността на предприятията чрез ангажираността на служителите. (Vue.js, Element UI, JavaScript, CSS/Sass, Bootstrap, HTML)',
       date: 'Юни 2019 - Юли 2020',
