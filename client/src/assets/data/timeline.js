@@ -202,7 +202,7 @@ const data = {
       location: 'Sophia Antipolis, Francia',
       title: 'Desarrolladora Web Front-End',
       description:
-        'Participé en el desarrollo de la Interfaz Usuario de una plataforma web que une Inteligencia Artificial y Psicología con el fin de evaluar y mejorar el rendimiento de las empresas a través del compromiso de sus collaboradores. (Vue.js, Element UI, JavaScript, CSS/Sass, Bootstrap, HTML)',
+        'Participé en el desarrollo de la Interfaz Usuario de una plataforma web que une Inteligencia Artificial y Psicología con el fin de evaluar y mejorar el rendimiento de las empresas a través del compromiso de sus colaboradores. (Vue.js, Element UI, JavaScript, CSS/Sass, Bootstrap, HTML)',
       date: 'Junio 2019 - Julio 2020',
       tag: 'empleo',
       studies: false,
