@@ -19,7 +19,7 @@ const en = {
     about: {
       heading: 'About me',
       presentation:
-        "Hi! I'm Dilyana and I'm a full-stack web developer based in Nice, France.",
+        "Hi! I'm Dilyana and I'm a full-stack developer based in Nice, France.",
       info1:
         "I'm passionate about programming and languages. I love creating aesthetic web and mobile applications and my goal is to write clean, well-structured code and to improve myself constantly.",
       info2:

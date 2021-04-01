@@ -19,7 +19,7 @@ const fr = {
     about: {
       heading: 'À propos de moi',
       presentation:
-        "Bonjour ! Je m'appelle Dilyana et je suis développeuse web full-stack, basée sur Nice, France.",
+        "Bonjour ! Je m'appelle Dilyana et je suis développeuse full-stack, basée sur Nice, France.",
       info1:
         "Je suis passionnée par la programmation et les langues. J'aime créer des applications web et mobiles esthétiques et j'ai pour objectif d'écrire un code bien structuré et de qualité, ainsi que de m'améliorer en permanence.",
       info2:
